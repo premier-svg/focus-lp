@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
   <title>運送業の採用をもっとスマートに | FOCUS45° by FRUOR株式会社</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,12 +44,25 @@
     .pulse-badge { animation: pulse 2s infinite; }
     @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
     .section-divider { border-top: 3px solid #1a237e; width: 60px; margin: 0 auto 1.5rem; }
+    .hero-section {
+      background: #0a0e1a;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+    .before-card {
+      background: #f0f0f0;
+      filter: grayscale(80%);
+    }
+    .after-card {
+      background: linear-gradient(135deg, #1a237e 0%, #ff6d00 100%);
+    }
   </style>
 </head>
 <body class="text-gray-800 antialiased">
 
   <!-- Header -->
-  <header class="gradient-navy py-4 px-6">
+  <header class="bg-black/80 backdrop-blur py-4 px-6 fixed top-0 left-0 right-0 z-50">
     <div class="max-w-5xl mx-auto flex items-center justify-between">
       <div class="text-white">
         <span class="font-bold text-lg tracking-wide">FRUOR株式会社</span>
@@ -60,145 +74,103 @@
   </header>
 
   <!-- Hero / ファーストビュー -->
-  <section class="gradient-navy text-white py-20 px-6">
-    <div class="max-w-3xl mx-auto text-center">
-      <p class="text-orange font-bold text-base md:text-lg mb-4 tracking-wider">
-        求人を出してもドライバーが来ない運送会社へ
-      </p>
-      <h1 class="text-3xl md:text-5xl font-black leading-tight mb-6">
-        "条件"で勝負する時代は<br>終わりました。
+  <section class="hero-section text-white px-6 pt-20">
+    <div class="max-w-3xl mx-auto text-center w-full py-24">
+      <h1 class="text-4xl md:text-6xl font-black leading-tight mb-10 tracking-tight">
+        "普通の求人"、<br>まだ出してますか？
       </h1>
-      <p class="text-blue-200 text-base md:text-xl mb-10 leading-relaxed">
-        2024年問題でドライバー不足が深刻化。<br>
-        その問題、求人の「出し方」ではなく「見せ方」で解決できます。
-      </p>
-      <a href="#contact" class="btn-orange inline-block bg-orange text-white font-black text-lg py-4 px-10 rounded-full shadow-2xl">
-        無料相談はこちら →
+      <a href="#before-after"
+        class="btn-orange inline-block bg-orange text-white font-black text-lg py-4 px-10 rounded-full shadow-2xl">
+        事例を見る ↓
       </a>
-      <p class="text-blue-300 text-sm mt-4">完全無料・2営業日以内にご連絡</p>
     </div>
   </section>
 
-  <!-- データセクション -->
-  <section class="py-16 px-6 bg-white">
-    <div class="max-w-4xl mx-auto text-center">
-      <div class="section-divider"></div>
-      <h2 class="text-2xl md:text-3xl font-black text-navy mb-10">求職者が見ているのは、求人サイトだけじゃない</h2>
-
-      <div class="bg-navy rounded-2xl text-white py-12 px-8 mb-10 shadow-xl">
-        <p class="text-blue-200 text-sm md:text-base mb-3">業界調査データ</p>
-        <div class="text-7xl md:text-9xl font-black text-orange mb-4">92.8<span class="text-4xl">%</span></div>
-        <p class="text-xl md:text-2xl font-bold mb-4">の求職者が企業名を再検索</p>
-        <p class="text-blue-200 text-base md:text-lg leading-relaxed">
-          求人サイトで見つけた企業を、必ず自社HPやSNSで調べ直します。<br>
-          その時に<span class="text-orange font-bold">「何もない」会社は、選ばれません。</span>
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-        <div class="bg-gray-50 rounded-xl p-6 card-hover">
-          <div class="text-3xl mb-3">🔍</div>
-          <h3 class="font-bold text-navy mb-2">Step 1: 求人サイトで発見</h3>
-          <p class="text-gray-600 text-sm">Indeed・求人ボックスなどで会社名を見つける</p>
-        </div>
-        <div class="bg-gray-50 rounded-xl p-6 card-hover">
-          <div class="text-3xl mb-3">📱</div>
-          <h3 class="font-bold text-navy mb-2">Step 2: SNS・HPを確認</h3>
-          <p class="text-gray-600 text-sm">InstagramやHPで「どんな会社か」「どんな職場環境か」を調査</p>
-        </div>
-        <div class="bg-orange rounded-xl p-6 card-hover text-white">
-          <div class="text-3xl mb-3">✅</div>
-          <h3 class="font-bold mb-2">Step 3: 応募を決断</h3>
-          <p class="text-orange-100 text-sm font-bold">ここで「何もない」会社はスルーされる</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 赤T白T差別化セクション -->
-  <section class="py-16 px-6 bg-gray-50">
+  <!-- セクション1: ビフォーアフター比較 -->
+  <section id="before-after" class="py-20 px-6 bg-gray-900 text-white">
     <div class="max-w-4xl mx-auto">
-      <div class="text-center mb-12">
-        <div class="section-divider"></div>
-        <h2 class="text-2xl md:text-3xl font-black text-navy">一般的な求人広告との違い</h2>
+      <div class="text-center mb-14">
+        <h2 class="text-2xl md:text-3xl font-black">求人の「見せ方」が全てを変える</h2>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- 赤T: 一般的な求人広告代理店 -->
-        <div class="bg-white border-2 border-red-200 rounded-2xl p-8 relative">
-          <div class="absolute -top-4 left-6 bg-red-500 text-white text-xs font-bold px-4 py-1 rounded-full">一般的な求人広告代理店</div>
-          <ul class="space-y-4 mt-4">
-            <li class="flex items-start gap-3">
-              <span class="text-red-500 text-xl font-bold mt-0.5">✕</span>
-              <div>
-                <p class="font-bold text-gray-700">掲載して終わり</p>
-                <p class="text-sm text-gray-500">掲載後の改善サポートなし</p>
-              </div>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-red-500 text-xl font-bold mt-0.5">✕</span>
-              <div>
-                <p class="font-bold text-gray-700">条件面だけの求人で埋もれる</p>
-                <p class="text-sm text-gray-500">給与・待遇だけの比較競争に陥る</p>
-              </div>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-red-500 text-xl font-bold mt-0.5">✕</span>
-              <div>
-                <p class="font-bold text-gray-700">運用改善なし</p>
-                <p class="text-sm text-gray-500">応募が来なくても原稿変更なし</p>
-              </div>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-red-500 text-xl font-bold mt-0.5">✕</span>
-              <div>
-                <p class="font-bold text-gray-700">クリック課金で費用が読めない</p>
-                <p class="text-sm text-gray-500">1クリック200〜1,000円、不要クリックにも課金</p>
-              </div>
-            </li>
-          </ul>
+        <!-- Before: 普通の求人（白T） -->
+        <div class="before-card rounded-2xl p-8 relative border-2 border-gray-400">
+          <div class="absolute -top-4 left-6 bg-gray-500 text-white text-xs font-bold px-4 py-1 rounded-full">普通の求人（白T）</div>
+          <div class="mt-4 space-y-4">
+            <div class="bg-white/50 rounded-lg p-4">
+              <p class="text-gray-500 font-bold text-sm mb-2">ドライバー募集</p>
+              <ul class="text-gray-400 text-xs space-y-1">
+                <li>・時給 1,100円〜</li>
+                <li>・週3日〜OK</li>
+                <li>・未経験歓迎</li>
+                <li>・社保完備</li>
+              </ul>
+            </div>
+            <p class="text-gray-500 text-sm text-center font-bold">条件だけ。埋もれる。</p>
+          </div>
         </div>
 
-        <!-- 白T: FOCUS45° -->
-        <div class="bg-navy text-white rounded-2xl p-8 relative shadow-xl">
-          <div class="absolute -top-4 left-6 bg-orange text-white text-xs font-bold px-4 py-1 rounded-full">FOCUS45°</div>
-          <ul class="space-y-4 mt-4">
-            <li class="flex items-start gap-3">
-              <span class="text-orange text-xl font-bold mt-0.5">◎</span>
-              <div>
-                <p class="font-bold">掲載してからがスタート</p>
-                <p class="text-sm text-blue-200">データ分析→改善を継続運用</p>
+        <!-- After: FOCUS45°の求人（赤T） -->
+        <div class="after-card rounded-2xl p-8 relative shadow-2xl">
+          <div class="absolute -top-4 left-6 bg-orange text-white text-xs font-bold px-4 py-1 rounded-full">FOCUS45°の求人（赤T）</div>
+          <div class="mt-4 space-y-4">
+            <div class="grid grid-cols-2 gap-3">
+              <div class="bg-white/20 rounded-lg p-3 text-center">
+                <div class="text-2xl mb-1">🎬</div>
+                <p class="text-white text-xs font-bold">動画LP</p>
               </div>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-orange text-xl font-bold mt-0.5">◎</span>
-              <div>
-                <p class="font-bold">採用コンセプト設計から差別化</p>
-                <p class="text-sm text-blue-200">求人ストーリーで「この会社で働きたい」を演出</p>
+              <div class="bg-white/20 rounded-lg p-3 text-center">
+                <div class="text-2xl mb-1">📸</div>
+                <p class="text-white text-xs font-bold">Instagram</p>
               </div>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-orange text-xl font-bold mt-0.5">◎</span>
-              <div>
-                <p class="font-bold">ABテストで継続改善</p>
-                <p class="text-sm text-blue-200">「勝ちパターン」を資産として蓄積</p>
+              <div class="bg-white/20 rounded-lg p-3 text-center">
+                <div class="text-2xl mb-1">🔍</div>
+                <p class="text-white text-xs font-bold">求人最適化</p>
               </div>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-orange text-xl font-bold mt-0.5">◎</span>
-              <div>
-                <p class="font-bold">月額固定で予算管理しやすい</p>
-                <p class="text-sm text-blue-200">無料広告枠を戦略活用。不要課金なし</p>
+              <div class="bg-white/20 rounded-lg p-3 text-center">
+                <div class="text-2xl mb-1">📊</div>
+                <p class="text-white text-xs font-bold">継続改善</p>
               </div>
-            </li>
-          </ul>
+            </div>
+            <p class="text-white text-sm text-center font-black">ビジュアルで伝える。刺さる。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- セクション2: 納品物プレビュー -->
+  <section class="py-20 px-6 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-14">
+        <div class="section-divider"></div>
+        <h2 class="text-2xl md:text-3xl font-black text-navy">FOCUS45° が届けるもの</h2>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-navy text-white rounded-2xl p-6 text-center card-hover shadow-lg">
+          <div class="text-4xl mb-3">🖥️</div>
+          <p class="font-black text-sm">採用LP</p>
+        </div>
+        <div class="bg-orange text-white rounded-2xl p-6 text-center card-hover shadow-lg">
+          <div class="text-4xl mb-3">📸</div>
+          <p class="font-black text-sm">Instagram<br>投稿</p>
+        </div>
+        <div class="bg-navy text-white rounded-2xl p-6 text-center card-hover shadow-lg">
+          <div class="text-4xl mb-3">📋</div>
+          <p class="font-black text-sm">求人掲載</p>
+        </div>
+        <div class="bg-orange text-white rounded-2xl p-6 text-center card-hover shadow-lg">
+          <div class="text-4xl mb-3">🎬</div>
+          <p class="font-black text-sm">動画<br>コンテンツ</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- 事例セクション -->
-  <section class="py-16 px-6 bg-white">
+  <section class="py-16 px-6 bg-gray-50">
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-12">
         <div class="section-divider"></div>
@@ -208,7 +180,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- 事例1 -->
-        <div class="bg-gray-50 rounded-2xl overflow-hidden card-hover shadow-md">
+        <div class="bg-white rounded-2xl overflow-hidden card-hover shadow-md">
           <div class="bg-navy text-white px-6 py-4">
             <span class="text-orange text-xs font-bold">CASE 01</span>
             <h3 class="font-black text-lg mt-1">ドライバー応募ゼロの運送会社が<br>2週間で3名採用に成功</h3>
@@ -232,7 +204,7 @@
         </div>
 
         <!-- 事例2 -->
-        <div class="bg-gray-50 rounded-2xl overflow-hidden card-hover shadow-md">
+        <div class="bg-white rounded-2xl overflow-hidden card-hover shadow-md">
           <div class="bg-navy text-white px-6 py-4">
             <span class="text-orange text-xs font-bold">CASE 02</span>
             <h3 class="font-black text-lg mt-1">2024年問題を見据え<br>月間応募数3倍・採用単価1/4に</h3>
@@ -258,61 +230,27 @@
     </div>
   </section>
 
-  <!-- サービス概要 -->
-  <section class="py-16 px-6 gradient-section">
-    <div class="max-w-4xl mx-auto">
-      <div class="text-center mb-12">
-        <div class="section-divider"></div>
-        <h2 class="text-2xl md:text-3xl font-black text-navy">FOCUS45° サービス概要</h2>
-        <p class="text-gray-500 mt-2">採用のデパート——採用できるまで何でもやります</p>
+  <!-- セクション3: 料金 -->
+  <section class="py-24 px-6 gradient-navy text-white text-center">
+    <div class="max-w-xl mx-auto">
+      <p class="text-blue-200 text-sm mb-2">採用1人に平均200万円かかる時代に。</p>
+      <div class="text-7xl md:text-8xl font-black text-orange leading-none mb-2">
+        3.9<span class="text-3xl">万円〜</span>
       </div>
+      <p class="text-blue-200 text-sm mb-10">月額</p>
 
-      <!-- 価格バッジ -->
-      <div class="text-center mb-10">
-        <div class="inline-block bg-navy text-white rounded-2xl px-10 py-6 shadow-xl">
-          <p class="text-blue-200 text-sm mb-1">月額</p>
-          <div class="text-5xl md:text-6xl font-black text-orange">3.9<span class="text-2xl">万円〜</span></div>
-          <p class="text-blue-200 text-sm mt-1">（1人採用に平均200万円かかる時代に）</p>
-        </div>
-      </div>
-
-      <!-- 実績バッジ -->
       <div class="flex flex-wrap justify-center gap-4 mb-10">
-        <div class="bg-orange text-white font-bold px-6 py-3 rounded-full shadow-lg pulse-badge">
+        <div class="bg-white/10 text-white font-bold px-6 py-3 rounded-full pulse-badge">
           支援企業 1,000社以上
         </div>
-        <div class="bg-navy text-white font-bold px-6 py-3 rounded-full shadow-lg pulse-badge">
+        <div class="bg-white/10 text-white font-bold px-6 py-3 rounded-full pulse-badge">
           継続率 98%
         </div>
       </div>
 
-      <!-- 含まれるもの -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="bg-white rounded-xl p-5 text-center shadow-md card-hover border-t-4 border-navy">
-          <div class="text-3xl mb-3">🔎</div>
-          <h3 class="font-bold text-navy text-sm">求人検索エンジン<br>最適化</h3>
-          <p class="text-gray-500 text-xs mt-2">Indeed・求人ボックス・スタンバイ等への最適掲載</p>
-        </div>
-        <div class="bg-white rounded-xl p-5 text-center shadow-md card-hover border-t-4 border-navy">
-          <div class="text-3xl mb-3">🎬</div>
-          <h3 class="font-bold text-navy text-sm">動画型<br>スワイプLP</h3>
-          <p class="text-gray-500 text-xs mt-2">求職者の二次検索を完全対策。職場の魅力を動画で伝達</p>
-        </div>
-        <div class="bg-white rounded-xl p-5 text-center shadow-md card-hover border-t-4 border-navy">
-          <div class="text-3xl mb-3">📸</div>
-          <h3 class="font-bold text-navy text-sm">Instagram<br>運用</h3>
-          <p class="text-gray-500 text-xs mt-2">若年層へのリーチ。現場の雰囲気をリアルに発信</p>
-        </div>
-        <div class="bg-white rounded-xl p-5 text-center shadow-md card-hover border-t-4 border-navy">
-          <div class="text-3xl mb-3">📊</div>
-          <h3 class="font-bold text-navy text-sm">ABテスト<br>改善</h3>
-          <p class="text-gray-500 text-xs mt-2">「勝ちパターン」を資産化。継続的な改善で成果向上</p>
-        </div>
-      </div>
-
-      <div class="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
-        <p class="text-navy font-bold text-base">専任コンサルタント配置 / LINEサポート / 月次レポート / 改善提案を継続提供</p>
-      </div>
+      <a href="#contact" class="btn-orange inline-block bg-orange text-white font-black text-xl py-5 px-12 rounded-full shadow-2xl">
+        無料相談する
+      </a>
     </div>
   </section>
 
