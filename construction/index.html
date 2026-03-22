@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>建設業の採用をもっとスマートに | FOCUS45° by FRUOR株式会社</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              DEFAULT: '#1a237e',
+              dark: '#0d1654',
+              light: '#283593',
+            },
+            orange: {
+              DEFAULT: '#ff6d00',
+              dark: '#e65100',
+              light: '#ff9100',
+            }
+          },
+          fontFamily: {
+            sans: ['"Noto Sans JP"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Noto Sans JP', sans-serif; }
+    .gradient-navy { background: linear-gradient(135deg, #0d1654 0%, #1a237e 50%, #283593 100%); }
+    .gradient-section { background: linear-gradient(180deg, #f8f9ff 0%, #ffffff 100%); }
+    .card-hover { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(26,35,126,0.15); }
+    .btn-orange { transition: background-color 0.2s ease, transform 0.1s ease; }
+    .btn-orange:hover { background-color: #e65100; transform: scale(1.02); }
+    .btn-orange:active { transform: scale(0.98); }
+    .pulse-badge { animation: pulse 2s infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+    .section-divider { border-top: 3px solid #1a237e; width: 60px; margin: 0 auto 1.5rem; }
+  </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+  <!-- Header -->
+  <header class="gradient-navy py-4 px-6">
+    <div class="max-w-5xl mx-auto flex items-center justify-between">
+      <div class="text-white">
+        <span class="font-bold text-lg tracking-wide">FRUOR株式会社</span>
+      </div>
+      <a href="#contact" class="btn-orange bg-orange text-white text-sm font-bold py-2 px-5 rounded-full shadow-lg">
+        無料相談
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero / ファーストビュー -->
+  <section class="gradient-navy text-white py-20 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-orange font-bold text-base md:text-lg mb-4 tracking-wider">
+        求人を出しても応募が来ない建設会社へ
+      </p>
+      <h1 class="text-3xl md:text-5xl font-black leading-tight mb-6">
+        "条件"で勝負する時代は<br>終わりました。
+      </h1>
+      <p class="text-blue-200 text-base md:text-xl mb-10 leading-relaxed">
+        若手が来ない、応募が少ない、採用しても定着しない。<br>
+        その問題、求人の「出し方」ではなく「見せ方」で解決できます。
+      </p>
+      <a href="#contact" class="btn-orange inline-block bg-orange text-white font-black text-lg py-4 px-10 rounded-full shadow-2xl">
+        無料相談はこちら →
+      </a>
+      <p class="text-blue-300 text-sm mt-4">完全無料・2営業日以内にご連絡</p>
+    </div>
+  </section>
+
+  <!-- データセクション -->
+  <section class="py-16 px-6 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="section-divider"></div>
+      <h2 class="text-2xl md:text-3xl font-black text-navy mb-10">求職者が見ているのは、求人サイトだけじゃない</h2>
+
+      <div class="bg-navy rounded-2xl text-white py-12 px-8 mb-10 shadow-xl">
+        <p class="text-blue-200 text-sm md:text-base mb-3">業界調査データ</p>
+        <div class="text-7xl md:text-9xl font-black text-orange mb-4">92.8<span class="text-4xl">%</span></div>
+        <p class="text-xl md:text-2xl font-bold mb-4">の求職者が企業名を再検索</p>
+        <p class="text-blue-200 text-base md:text-lg leading-relaxed">
+          求人サイトで見つけた企業を、必ず自社HPやSNSで調べ直します。<br>
+          その時に<span class="text-orange font-bold">「何もない」会社は、選ばれません。</span>
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+        <div class="bg-gray-50 rounded-xl p-6 card-hover">
+          <div class="text-3xl mb-3">🔍</div>
+          <h3 class="font-bold text-navy mb-2">Step 1: 求人サイトで発見</h3>
+          <p class="text-gray-600 text-sm">Indeed・求人ボックスなどで会社名を見つける</p>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-6 card-hover">
+          <div class="text-3xl mb-3">📱</div>
+          <h3 class="font-bold text-navy mb-2">Step 2: SNS・HPを確認</h3>
+          <p class="text-gray-600 text-sm">InstagramやHPで「どんな会社か」「どんな人が働いているか」を調査</p>
+        </div>
+        <div class="bg-orange rounded-xl p-6 card-hover text-white">
+          <div class="text-3xl mb-3">✅</div>
+          <h3 class="font-bold mb-2">Step 3: 応募を決断</h3>
+          <p class="text-orange-100 text-sm font-bold">ここで「何もない」会社はスルーされる</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 赤T白T差別化セクション -->
+  <section class="py-16 px-6 bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <div class="section-divider"></div>
+        <h2 class="text-2xl md:text-3xl font-black text-navy">一般的な求人広告との違い</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- 赤T: 一般的な求人広告代理店 -->
+        <div class="bg-white border-2 border-red-200 rounded-2xl p-8 relative">
+          <div class="absolute -top-4 left-6 bg-red-500 text-white text-xs font-bold px-4 py-1 rounded-full">一般的な求人広告代理店</div>
+          <ul class="space-y-4 mt-4">
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 text-xl font-bold mt-0.5">✕</span>
+              <div>
+                <p class="font-bold text-gray-700">掲載して終わり</p>
+                <p class="text-sm text-gray-500">掲載後の改善サポートなし</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 text-xl font-bold mt-0.5">✕</span>
+              <div>
+                <p class="font-bold text-gray-700">条件面だけの求人で埋もれる</p>
+                <p class="text-sm text-gray-500">給与・待遇だけの比較競争に陥る</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 text-xl font-bold mt-0.5">✕</span>
+              <div>
+                <p class="font-bold text-gray-700">運用改善なし</p>
+                <p class="text-sm text-gray-500">応募が来なくても原稿変更なし</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-red-500 text-xl font-bold mt-0.5">✕</span>
+              <div>
+                <p class="font-bold text-gray-700">クリック課金で費用が読めない</p>
+                <p class="text-sm text-gray-500">1クリック200〜1,000円、不要クリックにも課金</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 白T: FOCUS45° -->
+        <div class="bg-navy text-white rounded-2xl p-8 relative shadow-xl">
+          <div class="absolute -top-4 left-6 bg-orange text-white text-xs font-bold px-4 py-1 rounded-full">FOCUS45°</div>
+          <ul class="space-y-4 mt-4">
+            <li class="flex items-start gap-3">
+              <span class="text-orange text-xl font-bold mt-0.5">◎</span>
+              <div>
+                <p class="font-bold">掲載してからがスタート</p>
+                <p class="text-sm text-blue-200">データ分析→改善を継続運用</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-orange text-xl font-bold mt-0.5">◎</span>
+              <div>
+                <p class="font-bold">採用コンセプト設計から差別化</p>
+                <p class="text-sm text-blue-200">求人ストーリーで「この会社で働きたい」を演出</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-orange text-xl font-bold mt-0.5">◎</span>
+              <div>
+                <p class="font-bold">ABテストで継続改善</p>
+                <p class="text-sm text-blue-200">「勝ちパターン」を資産として蓄積</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-orange text-xl font-bold mt-0.5">◎</span>
+              <div>
+                <p class="font-bold">月額固定で予算管理しやすい</p>
+                <p class="text-sm text-blue-200">無料広告枠を戦略活用。不要課金なし</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 事例セクション -->
+  <section class="py-16 px-6 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <div class="section-divider"></div>
+        <h2 class="text-2xl md:text-3xl font-black text-navy">建設業界での支援実績</h2>
+        <p class="text-gray-500 mt-2">支援企業1,000社以上の中から厳選した事例</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- 事例1 -->
+        <div class="bg-gray-50 rounded-2xl overflow-hidden card-hover shadow-md">
+          <div class="bg-navy text-white px-6 py-4">
+            <span class="text-orange text-xs font-bold">CASE 01</span>
+            <h3 class="font-black text-lg mt-1">応募ゼロの建設会社が<br>10日で1名採用に成功</h3>
+          </div>
+          <div class="px-6 py-6">
+            <div class="space-y-4">
+              <div class="flex gap-4">
+                <div class="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded h-fit whitespace-nowrap">課題</div>
+                <p class="text-sm text-gray-600">半年以上求人を出し続けても応募ゼロ。大手求人サイトに掲載するも完全に埋もれていた。</p>
+              </div>
+              <div class="flex gap-4">
+                <div class="bg-blue-100 text-blue-600 text-xs font-bold px-2 py-1 rounded h-fit whitespace-nowrap">施策</div>
+                <p class="text-sm text-gray-600">社長インタビュー動画を軸にした採用コンセプト設計。求人検索エンジン3媒体への最適化掲載を実施。</p>
+              </div>
+              <div class="flex gap-4">
+                <div class="bg-green-100 text-green-600 text-xs font-bold px-2 py-1 rounded h-fit whitespace-nowrap">結果</div>
+                <p class="text-sm text-gray-600 font-bold">開始10日で5件の応募。そのうち1名を即採用。採用単価は従来の1/5に圧縮。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 事例2 -->
+        <div class="bg-gray-50 rounded-2xl overflow-hidden card-hover shadow-md">
+          <div class="bg-navy text-white px-6 py-4">
+            <span class="text-orange text-xs font-bold">CASE 02</span>
+            <h3 class="font-black text-lg mt-1">3ヶ月で400件の応募を獲得<br>若手20代が2.5倍に</h3>
+          </div>
+          <div class="px-6 py-6">
+            <div class="space-y-4">
+              <div class="flex gap-4">
+                <div class="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded h-fit whitespace-nowrap">課題</div>
+                <p class="text-sm text-gray-600">応募は来るが年配の方ばかり。若手人材の獲得が急務だったが、訴求方法が分からなかった。</p>
+              </div>
+              <div class="flex gap-4">
+                <div class="bg-blue-100 text-blue-600 text-xs font-bold px-2 py-1 rounded h-fit whitespace-nowrap">施策</div>
+                <p class="text-sm text-gray-600">Instagram運用+動画スワイプLPで現場の雰囲気を可視化。20代が共感するコンテンツ設計。</p>
+              </div>
+              <div class="flex gap-4">
+                <div class="bg-green-100 text-green-600 text-xs font-bold px-2 py-1 rounded h-fit whitespace-nowrap">結果</div>
+                <p class="text-sm text-gray-600 font-bold">3ヶ月で累計400件の応募。20代の応募割合が2.5倍に。採用後の定着率も大幅改善。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- サービス概要 -->
+  <section class="py-16 px-6 gradient-section">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <div class="section-divider"></div>
+        <h2 class="text-2xl md:text-3xl font-black text-navy">FOCUS45° サービス概要</h2>
+        <p class="text-gray-500 mt-2">採用のデパート——採用できるまで何でもやります</p>
+      </div>
+
+      <!-- 価格バッジ -->
+      <div class="text-center mb-10">
+        <div class="inline-block bg-navy text-white rounded-2xl px-10 py-6 shadow-xl">
+          <p class="text-blue-200 text-sm mb-1">月額</p>
+          <div class="text-5xl md:text-6xl font-black text-orange">3.9<span class="text-2xl">万円〜</span></div>
+          <p class="text-blue-200 text-sm mt-1">（1人採用に平均200万円かかる時代に）</p>
+        </div>
+      </div>
+
+      <!-- 実績バッジ -->
+      <div class="flex flex-wrap justify-center gap-4 mb-10">
+        <div class="bg-orange text-white font-bold px-6 py-3 rounded-full shadow-lg pulse-badge">
+          支援企業 1,000社以上
+        </div>
+        <div class="bg-navy text-white font-bold px-6 py-3 rounded-full shadow-lg pulse-badge">
+          継続率 98%
+        </div>
+      </div>
+
+      <!-- 含まれるもの -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-white rounded-xl p-5 text-center shadow-md card-hover border-t-4 border-navy">
+          <div class="text-3xl mb-3">🔎</div>
+          <h3 class="font-bold text-navy text-sm">求人検索エンジン<br>最適化</h3>
+          <p class="text-gray-500 text-xs mt-2">Indeed・求人ボックス・スタンバイ等への最適掲載</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 text-center shadow-md card-hover border-t-4 border-navy">
+          <div class="text-3xl mb-3">🎬</div>
+          <h3 class="font-bold text-navy text-sm">動画型<br>スワイプLP</h3>
+          <p class="text-gray-500 text-xs mt-2">求職者の二次検索を完全対策。会社の魅力を動画で伝達</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 text-center shadow-md card-hover border-t-4 border-navy">
+          <div class="text-3xl mb-3">📸</div>
+          <h3 class="font-bold text-navy text-sm">Instagram<br>運用</h3>
+          <p class="text-gray-500 text-xs mt-2">若年層へのリーチ。現場の雰囲気をリアルに発信</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 text-center shadow-md card-hover border-t-4 border-navy">
+          <div class="text-3xl mb-3">📊</div>
+          <h3 class="font-bold text-navy text-sm">ABテスト<br>改善</h3>
+          <p class="text-gray-500 text-xs mt-2">「勝ちパターン」を資産化。継続的な改善で成果向上</p>
+        </div>
+      </div>
+
+      <div class="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
+        <p class="text-navy font-bold text-base">専任コンサルタント配置 / LINEサポート / 月次レポート / 改善提案を継続提供</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- お問い合わせフォーム -->
+  <section id="contact" class="py-16 px-6 bg-navy text-white">
+    <div class="max-w-2xl mx-auto">
+      <div class="text-center mb-10">
+        <div class="w-12 border-t-3 border-orange mx-auto mb-6" style="border-top: 3px solid #ff6d00;"></div>
+        <h2 class="text-2xl md:text-3xl font-black mb-3">まずは無料相談から</h2>
+        <p class="text-blue-200">2営業日以内に専任コンサルタントよりご連絡します</p>
+      </div>
+
+      <form id="contactForm" class="space-y-5" novalidate>
+        <div>
+          <label class="block text-sm font-bold mb-1">会社名 <span class="text-orange">*</span></label>
+          <input type="text" id="company" name="company" required
+            class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-blue-300 focus:outline-none focus:border-orange focus:bg-white/20 transition"
+            placeholder="株式会社〇〇建設">
+          <p id="companyError" class="text-orange text-xs mt-1 hidden">会社名を入力してください</p>
+        </div>
+
+        <div>
+          <label class="block text-sm font-bold mb-1">代表者名 <span class="text-orange">*</span></label>
+          <input type="text" id="name" name="name" required
+            class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-blue-300 focus:outline-none focus:border-orange focus:bg-white/20 transition"
+            placeholder="山田 太郎">
+          <p id="nameError" class="text-orange text-xs mt-1 hidden">代表者名を入力してください</p>
+        </div>
+
+        <div>
+          <label class="block text-sm font-bold mb-1">役職</label>
+          <input type="text" id="title" name="title"
+            class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-blue-300 focus:outline-none focus:border-orange focus:bg-white/20 transition"
+            placeholder="代表取締役">
+        </div>
+
+        <div>
+          <label class="block text-sm font-bold mb-1">メールアドレス <span class="text-orange">*</span></label>
+          <input type="email" id="email" name="email" required
+            class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-blue-300 focus:outline-none focus:border-orange focus:bg-white/20 transition"
+            placeholder="info@example.com">
+          <p id="emailError" class="text-orange text-xs mt-1 hidden">正しいメールアドレスを入力してください</p>
+        </div>
+
+        <div>
+          <label class="block text-sm font-bold mb-1">電話番号 <span class="text-orange">*</span></label>
+          <input type="tel" id="phone" name="phone" required
+            class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-blue-300 focus:outline-none focus:border-orange focus:bg-white/20 transition"
+            placeholder="03-XXXX-XXXX">
+          <p id="phoneError" class="text-orange text-xs mt-1 hidden">電話番号を入力してください</p>
+        </div>
+
+        <div id="formMessage" class="hidden rounded-lg p-4 text-center font-bold"></div>
+
+        <button type="submit" id="submitBtn"
+          class="btn-orange w-full bg-orange text-white font-black text-lg py-4 rounded-full shadow-2xl mt-2">
+          無料相談を申し込む →
+        </button>
+
+        <p class="text-blue-300 text-xs text-center">個人情報は厳重に管理し、サービス提供以外の目的では使用しません</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-10 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-white font-bold text-lg mb-3">FRUOR株式会社</p>
+      <p class="text-sm mb-1">東京都新宿区西新宿3-7-30 フロンティアグラン西新宿1202</p>
+      <p class="text-sm mb-4">TEL: 03-6848-0217</p>
+      <p class="text-xs">© 2026 FRUOR Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Form validation and submission
+    const GAS_URL = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec';
+
+    function showError(id, show) {
+      const el = document.getElementById(id);
+      if (show) {
+        el.classList.remove('hidden');
+      } else {
+        el.classList.add('hidden');
+      }
+    }
+
+    function validateEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const company = document.getElementById('company').value.trim();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+
+      let hasError = false;
+
+      showError('companyError', !company);
+      showError('nameError', !name);
+      showError('emailError', !email || !validateEmail(email));
+      showError('phoneError', !phone);
+
+      if (!company) hasError = true;
+      if (!name) hasError = true;
+      if (!email || !validateEmail(email)) hasError = true;
+      if (!phone) hasError = true;
+
+      if (hasError) return;
+
+      const submitBtn = document.getElementById('submitBtn');
+      const formMessage = document.getElementById('formMessage');
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = '送信中...';
+
+      const formData = {
+        company,
+        name,
+        title: document.getElementById('title').value.trim(),
+        email,
+        phone,
+        industry: '建設業',
+        submitted_at: new Date().toISOString()
+      };
+
+      try {
+        await fetch(GAS_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
+        });
+
+        formMessage.className = 'rounded-lg p-4 text-center font-bold bg-green-500/20 border border-green-400 text-green-300';
+        formMessage.textContent = 'お申し込みありがとうございます。担当者より2営業日以内にご連絡いたします。';
+        formMessage.classList.remove('hidden');
+
+        document.getElementById('contactForm').reset();
+        submitBtn.textContent = '送信完了';
+      } catch (err) {
+        formMessage.className = 'rounded-lg p-4 text-center font-bold bg-red-500/20 border border-red-400 text-red-300';
+        formMessage.textContent = '送信に失敗しました。お手数ですが、お電話（03-6848-0217）にてお問い合わせください。';
+        formMessage.classList.remove('hidden');
+        submitBtn.disabled = false;
+        submitBtn.textContent = '無料相談を申し込む →';
+      }
+    });
+  </script>
+</body>
+</html>
