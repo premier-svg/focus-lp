@@ -50,8 +50,9 @@
 <body class="antialiased">
 
   <!-- ===== セクション1: ファーストビュー ===== -->
-  <section style="background:#080e2e;" class="min-h-screen flex flex-col items-center justify-center text-white px-6 py-24">
-    <div class="max-w-3xl mx-auto text-center w-full">
+  <section class="min-h-screen flex flex-col items-center justify-center text-white px-6 py-24 relative" style="background:url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1920&q=80') center/cover no-repeat;">
+    <div class="absolute inset-0 bg-black/70"></div>
+    <div class="max-w-3xl mx-auto text-center w-full relative z-10">
       <h1 class="text-4xl md:text-6xl font-black leading-tight mb-12 tracking-tight">
         応募ゼロの運送会社が、<br>10日で採用できた話。
       </h1>
@@ -66,7 +67,7 @@
           すぐに話を聞く →
         </a>
       </div>
-      <div class="mt-16 scroll-bounce text-gray-500 text-sm">↓ scroll</div>
+      <div class="mt-16 scroll-bounce text-gray-500 text-sm relative z-10">↓ scroll</div>
     </div>
   </section>
 
@@ -101,7 +102,7 @@
   </section>
 
   <!-- ===== セクション3: 事例iframe ===== -->
-  <section id="cases" class="py-20 px-6" style="background:#030712;">
+  <section id="cases" class="py-20 px-6 bg-black">
     <div class="max-w-5xl mx-auto">
       <div class="text-center mb-14">
         <h2 class="text-3xl md:text-5xl font-black text-white">なぜ応募が殺到するのか？</h2>
