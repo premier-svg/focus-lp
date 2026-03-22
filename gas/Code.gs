@@ -36,7 +36,7 @@ function doPost(e) {
     }
 
     sheet.appendRow([
-      new Date(),
+      Utilities.formatDate(new Date(), 'Asia/Tokyo', 'yyyy-MM-dd HH:mm:ss'),
       data.company || '',
       data.name || '',
       data.title || '',
