@@ -68,7 +68,7 @@
         <span class="font-bold text-lg tracking-wide">FRUOR株式会社</span>
       </div>
       <a href="#contact" class="btn-orange bg-orange text-white text-sm font-bold py-2 px-5 rounded-full shadow-lg">
-        無料相談
+        無料レポート
       </a>
     </div>
   </header>
@@ -136,31 +136,20 @@
     </div>
   </section>
 
-  <!-- セクション2: 納品物プレビュー -->
-  <section class="py-20 px-6 bg-white">
-    <div class="max-w-4xl mx-auto">
-      <div class="text-center mb-14">
-        <div class="section-divider"></div>
-        <h2 class="text-2xl md:text-3xl font-black text-navy">FOCUS45° が届けるもの</h2>
+  <!-- 実績数字セクション -->
+  <section class="py-16 px-6 bg-gray-900 text-center">
+    <div class="max-w-4xl mx-auto grid grid-cols-3 gap-8">
+      <div>
+        <p class="text-5xl font-bold text-orange">1,000</p>
+        <p class="text-white mt-2">支援企業数</p>
       </div>
-
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="bg-navy text-white rounded-2xl p-6 text-center card-hover shadow-lg">
-          <div class="text-4xl mb-3">🖥️</div>
-          <p class="font-black text-sm">採用LP</p>
-        </div>
-        <div class="bg-orange text-white rounded-2xl p-6 text-center card-hover shadow-lg">
-          <div class="text-4xl mb-3">📸</div>
-          <p class="font-black text-sm">Instagram<br>投稿</p>
-        </div>
-        <div class="bg-navy text-white rounded-2xl p-6 text-center card-hover shadow-lg">
-          <div class="text-4xl mb-3">📋</div>
-          <p class="font-black text-sm">求人掲載</p>
-        </div>
-        <div class="bg-orange text-white rounded-2xl p-6 text-center card-hover shadow-lg">
-          <div class="text-4xl mb-3">🎬</div>
-          <p class="font-black text-sm">動画<br>コンテンツ</p>
-        </div>
+      <div>
+        <p class="text-5xl font-bold text-orange">98%</p>
+        <p class="text-white mt-2">継続率</p>
+      </div>
+      <div>
+        <p class="text-5xl font-bold text-orange">3x</p>
+        <p class="text-white mt-2">平均応募増加</p>
       </div>
     </div>
   </section>
@@ -226,36 +215,12 @@
     </div>
   </section>
 
-  <!-- セクション3: 料金 -->
-  <section class="py-24 px-6 gradient-navy text-white text-center">
-    <div class="max-w-xl mx-auto">
-      <p class="text-blue-200 text-sm mb-2">採用1人に平均200万円かかる時代に。</p>
-      <div class="text-7xl md:text-8xl font-black text-orange leading-none mb-2">
-        3.9<span class="text-3xl">万円〜</span>
-      </div>
-      <p class="text-blue-200 text-sm mb-10">月額</p>
-
-      <div class="flex flex-wrap justify-center gap-4 mb-10">
-        <div class="bg-white/10 text-white font-bold px-6 py-3 rounded-full pulse-badge">
-          支援企業 1,000社以上
-        </div>
-        <div class="bg-white/10 text-white font-bold px-6 py-3 rounded-full pulse-badge">
-          継続率 98%
-        </div>
-      </div>
-
-      <a href="#contact" class="btn-orange inline-block bg-orange text-white font-black text-xl py-5 px-12 rounded-full shadow-2xl">
-        無料相談する
-      </a>
-    </div>
-  </section>
-
   <!-- お問い合わせフォーム -->
   <section id="contact" class="py-16 px-6 bg-navy text-white">
     <div class="max-w-2xl mx-auto">
       <div class="text-center mb-10">
         <div class="w-12 border-t-3 border-orange mx-auto mb-6" style="border-top: 3px solid #ff6d00;"></div>
-        <h2 class="text-2xl md:text-3xl font-black mb-3">まずは無料相談から</h2>
+        <h2 class="text-2xl md:text-3xl font-black mb-3">無料レポートを受け取る</h2>
         <p class="text-blue-200">2営業日以内に専任コンサルタントよりご連絡します</p>
       </div>
 
@@ -303,7 +268,7 @@
 
         <button type="submit" id="submitBtn"
           class="btn-orange w-full bg-orange text-white font-black text-lg py-4 rounded-full shadow-2xl mt-2">
-          無料相談を申し込む →
+          無料レポートを受け取る →
         </button>
 
         <p class="text-blue-300 text-xs text-center">個人情報は厳重に管理し、サービス提供以外の目的では使用しません</p>
@@ -406,7 +371,7 @@
         formMessage.textContent = '送信に失敗しました。お手数ですが、お電話（03-6848-0217）にてお問い合わせください。';
         formMessage.classList.remove('hidden');
         submitBtn.disabled = false;
-        submitBtn.textContent = '無料相談を申し込む →';
+        submitBtn.textContent = '無料レポートを受け取る →';
       }
     });
   </script>
