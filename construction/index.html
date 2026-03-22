@@ -16,13 +16,11 @@
           colors: {
             navy: {
               DEFAULT: '#0d1654',
-              mid: '#1a237e',
-              light: '#283593',
+              dark: '#080e2e',
             },
             orange: {
               DEFAULT: '#ff6d00',
               dark: '#e65100',
-              light: '#ff9100',
             }
           },
           fontFamily: {
@@ -35,9 +33,7 @@
   <style>
     body { font-family: 'Noto Sans JP', sans-serif; }
 
-    .hero-bg {
-      background: #080e2e;
-    }
+    html { scroll-behavior: smooth; }
 
     .btn-cta {
       transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
@@ -49,190 +45,186 @@
     }
     .btn-cta:active { transform: scale(0.98); }
 
-    .white-t {
-      background: #f0f0f0;
-      filter: grayscale(100%);
+    .btn-outline {
+      transition: background-color 0.2s ease, transform 0.1s ease;
     }
-    .red-t {
-      background: linear-gradient(135deg, #0d1654 0%, #1a237e 60%, #ff6d00 100%);
+    .btn-outline:hover {
+      background-color: rgba(255,255,255,0.1);
+      transform: scale(1.03);
     }
-
-    .deliverable-card {
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .deliverable-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 16px 32px rgba(13,22,84,0.2);
-    }
-
-    .price-glow {
-      text-shadow: 0 0 40px rgba(255,109,0,0.6);
-    }
+    .btn-outline:active { transform: scale(0.98); }
 
     .scroll-bounce {
       animation: bounce 2s infinite;
     }
     @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(6px); }
+      0%, 100% { transform: translateY(0) translateX(-50%); }
+      50% { transform: translateY(6px) translateX(-50%); }
     }
-
-    html { scroll-behavior: smooth; }
   </style>
 </head>
 <body class="antialiased">
 
-  <!-- ========== HERO ========== -->
-  <section class="hero-bg min-h-screen flex flex-col items-center justify-center text-center px-6 relative overflow-hidden">
+  <!-- ========== SECTION 1: FIRSTVIEW ========== -->
+  <section style="background:#080e2e;" class="min-h-screen flex flex-col items-center justify-center text-center px-6 relative overflow-hidden">
 
-    <!-- 背景グロー -->
     <div class="absolute inset-0 pointer-events-none">
       <div style="position:absolute;top:20%;left:50%;transform:translateX(-50%);width:600px;height:600px;background:radial-gradient(circle,rgba(26,35,126,0.4) 0%,transparent 70%);"></div>
     </div>
 
     <div class="relative z-10 max-w-4xl mx-auto">
-      <p class="text-orange text-sm md:text-base font-bold tracking-widest mb-6 uppercase">FOCUS 45° for 建設業</p>
-      <h1 class="text-white font-black leading-tight mb-10" style="font-size:clamp(2rem,6vw,4.5rem);">
-        "普通の求人"、<br>まだ出してますか？
+      <h1 class="text-white font-black leading-tight mb-6" style="font-size:clamp(1.8rem,5.5vw,4rem);">
+        応募ゼロの建設会社が、<br>10日で採用できた話。
       </h1>
-      <a href="#cases" class="btn-cta inline-block bg-orange text-white font-black py-5 px-12 rounded-full shadow-2xl text-lg md:text-xl">
-        事例を見る ↓
-      </a>
+      <p class="text-gray-400 text-sm md:text-base mb-12">しかも、広告費は今までの半分以下。</p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#cases" class="btn-cta inline-block bg-orange-500 text-white font-black py-4 px-10 rounded-full shadow-2xl text-base md:text-lg">
+          事例をもっと見る ↓
+        </a>
+        <a href="https://timerex.net/s/placeholder" target="_blank" class="btn-outline inline-block border border-white text-white bg-transparent font-black py-4 px-10 rounded-full text-base md:text-lg">
+          すぐに話を聞く →
+        </a>
+      </div>
     </div>
 
-    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 scroll-bounce">
+    <div class="absolute bottom-10 left-1/2 scroll-bounce">
       <svg width="24" height="24" fill="none" stroke="#ff6d00" stroke-width="2.5" viewBox="0 0 24 24">
         <path d="M12 5v14M5 13l7 7 7-7"/>
       </svg>
     </div>
   </section>
 
-  <!-- ========== BEFORE / AFTER ========== -->
+  <!-- ========== SECTION 2: 実績数字 ========== -->
+  <section class="bg-black py-20 px-6">
+    <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+      <div>
+        <p class="text-6xl md:text-8xl font-black" style="color:#ff6d00;">1,000+</p>
+        <p class="text-white text-sm mt-3">支援企業</p>
+      </div>
+      <div>
+        <p class="text-6xl md:text-8xl font-black" style="color:#ff6d00;">98%</p>
+        <p class="text-white text-sm mt-3">継続率</p>
+      </div>
+      <div>
+        <p class="text-6xl md:text-8xl font-black" style="color:#ff6d00;">10日</p>
+        <p class="text-white text-sm mt-3">応募ゼロ→採用</p>
+      </div>
+      <div>
+        <p class="text-6xl md:text-8xl font-black" style="color:#ff6d00;">2x</p>
+        <p class="text-white text-sm mt-3">クリック率</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 3: 事例iframe ========== -->
   <section id="cases" class="bg-gray-950 py-20 px-6">
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-6xl mx-auto">
 
-      <p class="text-center text-gray-400 text-sm font-bold tracking-widest uppercase mb-12">Before / After</p>
+      <h2 class="text-white font-black text-3xl md:text-4xl text-center mb-14">全部、FOCUSが作りました。</h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-stretch">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-        <!-- WHITE T: 普通の求人 -->
-        <div class="white-t rounded-2xl p-8 md:p-10 flex flex-col gap-6">
-          <div>
-            <span class="text-xs font-bold tracking-widest text-gray-400 uppercase">普通の求人（白T）</span>
-            <h2 class="text-gray-500 font-black text-2xl mt-2 leading-snug">条件だけ<br>並べた求人</h2>
+        <div>
+          <div style="border-radius:12px;overflow:hidden;">
+            <iframe src="https://zeroone-01-recruit.com/" style="width:100%;height:300px;border-radius:12px;overflow:hidden;pointer-events:none;" scrolling="no"></iframe>
           </div>
-          <div class="flex flex-col gap-3 text-gray-400 text-sm flex-1">
-            <div class="border border-gray-300 rounded-lg px-4 py-3 bg-white">
-              <p class="font-bold text-gray-400">株式会社〇〇建設</p>
-              <p class="text-xs mt-1 text-gray-400">基本給 20〜28万円 / 週休2日 / 賞与年2回</p>
-              <p class="text-xs mt-1 text-gray-400">経験者優遇 / 資格手当あり / 社会保険完備</p>
-              <p class="text-xs mt-2 text-gray-300">◆業務内容 土木工事全般…</p>
-            </div>
-            <p class="text-gray-400 text-xs text-center pt-2">条件だけ。会社の空気が伝わらない。<br>埋もれて終わり。</p>
-          </div>
+          <p class="text-white text-sm font-bold text-center mt-3 mb-2">施工管理の大将軍</p>
+          <p class="text-center">
+            <a href="https://zeroone-01-recruit.com/" target="_blank" class="text-orange-500 text-sm font-bold hover:underline">→ このサイトを見る</a>
+          </p>
         </div>
 
-        <!-- RED T: FOCUS45° 実際の納品事例 -->
-        <div class="red-t rounded-2xl p-8 md:p-10 flex flex-col gap-6 relative overflow-hidden">
-          <div class="absolute top-4 right-4 bg-orange text-white text-xs font-black px-3 py-1 rounded-full">FOCUS 45°</div>
-          <div>
-            <span class="text-xs font-bold tracking-widest text-orange uppercase">FOCUS45°の求人（赤T）</span>
-            <h2 class="text-white font-black text-2xl mt-2 leading-snug">全部、FOCUSが<br>作りました。</h2>
+        <div>
+          <div style="border-radius:12px;overflow:hidden;">
+            <iframe src="https://lua-corp.com/recruit/" style="width:100%;height:300px;border-radius:12px;overflow:hidden;pointer-events:none;" scrolling="no"></iframe>
           </div>
-          <div class="grid grid-cols-2 gap-4 flex-1">
-            <div>
-              <iframe src="https://zeroone-01-recruit.com/" style="width:100%;height:250px;border-radius:12px;overflow:hidden;pointer-events:none;" scrolling="no"></iframe>
-              <p class="text-center text-sm mt-2 text-orange-400">施工管理の大将軍</p>
-            </div>
-            <div>
-              <iframe src="https://lua-corp.com/recruit/" style="width:100%;height:250px;border-radius:12px;overflow:hidden;pointer-events:none;" scrolling="no"></iframe>
-              <p class="text-center text-sm mt-2 text-orange-400">血液型採用</p>
-            </div>
-            <div>
-              <iframe src="https://katawakuya-recruit.com/" style="width:100%;height:250px;border-radius:12px;overflow:hidden;pointer-events:none;" scrolling="no"></iframe>
-              <p class="text-center text-sm mt-2 text-orange-400">新井電設</p>
-            </div>
+          <p class="text-white text-sm font-bold text-center mt-3 mb-2">血液型採用</p>
+          <p class="text-center">
+            <a href="https://lua-corp.com/recruit/" target="_blank" class="text-orange-500 text-sm font-bold hover:underline">→ このサイトを見る</a>
+          </p>
+        </div>
+
+        <div>
+          <div style="border-radius:12px;overflow:hidden;">
+            <iframe src="https://katawakuya-recruit.com/" style="width:100%;height:300px;border-radius:12px;overflow:hidden;pointer-events:none;" scrolling="no"></iframe>
           </div>
+          <p class="text-white text-sm font-bold text-center mt-3 mb-2">新井電設</p>
+          <p class="text-center">
+            <a href="https://katawakuya-recruit.com/" target="_blank" class="text-orange-500 text-sm font-bold hover:underline">→ このサイトを見る</a>
+          </p>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ========== 実績数字 ========== -->
-  <section class="bg-gray-900 py-16 px-6 text-center">
-    <div class="max-w-4xl mx-auto grid grid-cols-3 gap-8">
-      <div>
-        <p class="text-5xl font-bold text-orange">1,000</p>
-        <p class="text-white mt-2">支援企業数</p>
-      </div>
-      <div>
-        <p class="text-5xl font-bold text-orange">98%</p>
-        <p class="text-white mt-2">継続率</p>
-      </div>
-      <div>
-        <p class="text-5xl font-bold text-orange">10日</p>
-        <p class="text-white mt-2">応募ゼロ→採用成功</p>
-      </div>
-    </div>
+  <!-- ========== SECTION 4: 一文だけ ========== -->
+  <section class="bg-gradient-to-r from-orange-500 to-orange-600 py-20 px-6">
+    <p class="text-2xl md:text-4xl font-black text-white text-center">詳細が気になったら、下のフォームから。</p>
   </section>
 
-  <!-- ========== FORM ========== -->
+  <!-- ========== SECTION 5: CTAフォーム ========== -->
   <section id="contact" class="py-20 px-6" style="background:#0d1654;">
     <div class="max-w-xl mx-auto">
 
-      <h2 class="text-white font-black text-2xl md:text-3xl text-center mb-2">あなたの会社の"赤いTシャツ"を<br>見つけませんか？</h2>
+      <h2 class="text-white font-black text-2xl md:text-3xl text-center mb-3">あなたの会社の"赤いTシャツ"を<br>見つけませんか？</h2>
       <p class="text-blue-300 text-center text-sm mb-10">無料レポートをお送りします。以下にご入力ください。</p>
 
       <form id="contactForm" class="space-y-4" novalidate>
 
         <div>
-          <label class="block text-white text-sm font-bold mb-1">会社名 <span class="text-orange">*</span></label>
+          <label class="block text-white text-sm font-bold mb-1">会社名 <span class="text-orange-400">*</span></label>
           <input type="text" id="company" name="company" required
-            class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-blue-300 focus:outline-none focus:border-orange focus:bg-white/20 transition"
+            class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-blue-300 focus:outline-none focus:border-orange-400 focus:bg-white/20 transition"
             placeholder="株式会社〇〇建設">
-          <p id="companyError" class="text-orange text-xs mt-1 hidden">会社名を入力してください</p>
+          <p id="companyError" class="text-orange-400 text-xs mt-1 hidden">会社名を入力してください</p>
         </div>
 
         <div>
-          <label class="block text-white text-sm font-bold mb-1">代表者名 <span class="text-orange">*</span></label>
+          <label class="block text-white text-sm font-bold mb-1">代表者名 <span class="text-orange-400">*</span></label>
           <input type="text" id="name" name="name" required
-            class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-blue-300 focus:outline-none focus:border-orange focus:bg-white/20 transition"
+            class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-blue-300 focus:outline-none focus:border-orange-400 focus:bg-white/20 transition"
             placeholder="山田 太郎">
-          <p id="nameError" class="text-orange text-xs mt-1 hidden">代表者名を入力してください</p>
+          <p id="nameError" class="text-orange-400 text-xs mt-1 hidden">代表者名を入力してください</p>
         </div>
 
         <div>
           <label class="block text-white text-sm font-bold mb-1">役職</label>
           <input type="text" id="title" name="title"
-            class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-blue-300 focus:outline-none focus:border-orange focus:bg-white/20 transition"
+            class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-blue-300 focus:outline-none focus:border-orange-400 focus:bg-white/20 transition"
             placeholder="代表取締役">
         </div>
 
         <div>
-          <label class="block text-white text-sm font-bold mb-1">メールアドレス <span class="text-orange">*</span></label>
+          <label class="block text-white text-sm font-bold mb-1">メールアドレス <span class="text-orange-400">*</span></label>
           <input type="email" id="email" name="email" required
-            class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-blue-300 focus:outline-none focus:border-orange focus:bg-white/20 transition"
+            class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-blue-300 focus:outline-none focus:border-orange-400 focus:bg-white/20 transition"
             placeholder="info@example.co.jp">
-          <p id="emailError" class="text-orange text-xs mt-1 hidden">正しいメールアドレスを入力してください</p>
+          <p id="emailError" class="text-orange-400 text-xs mt-1 hidden">正しいメールアドレスを入力してください</p>
         </div>
 
         <div>
-          <label class="block text-white text-sm font-bold mb-1">電話番号 <span class="text-orange">*</span></label>
+          <label class="block text-white text-sm font-bold mb-1">電話番号 <span class="text-orange-400">*</span></label>
           <input type="tel" id="phone" name="phone" required
-            class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-blue-300 focus:outline-none focus:border-orange focus:bg-white/20 transition"
+            class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-blue-300 focus:outline-none focus:border-orange-400 focus:bg-white/20 transition"
             placeholder="03-1234-5678">
-          <p id="phoneError" class="text-orange text-xs mt-1 hidden">電話番号を入力してください</p>
+          <p id="phoneError" class="text-orange-400 text-xs mt-1 hidden">電話番号を入力してください</p>
         </div>
 
         <div id="formMessage" class="hidden rounded-lg p-4 text-center font-bold"></div>
 
         <button type="submit" id="submitBtn"
-          class="btn-cta w-full bg-orange text-white font-black text-lg py-4 rounded-full shadow-2xl mt-2">
+          class="btn-cta w-full font-black text-lg py-4 rounded-full shadow-2xl mt-2 text-white"
+          style="background:#ff6d00;">
           無料レポートを受け取る →
         </button>
 
-        <p class="text-blue-400 text-xs text-center">個人情報は厳重に管理し、サービス提供以外の目的では使用しません</p>
+        <p class="text-blue-400 text-xs text-center pt-2">
+          今すぐ相談したい方は
+          <a href="https://timerex.net/s/placeholder" target="_blank" class="underline hover:text-white">こちらから日程を選べます →</a>
+        </p>
+
       </form>
 
     </div>
