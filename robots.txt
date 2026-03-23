@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /gaten-saiyo/
+Disallow: /dora-saiyo/
+Disallow: /personalized/
+Disallow: /construction/
+Disallow: /logistics/

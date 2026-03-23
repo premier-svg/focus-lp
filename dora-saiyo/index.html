@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>ドラ採用 | 運送業専門の採用支援 | FRUOR株式会社</title>
+  <meta property="og:title" content="ドラ採用 | 運送業専門の採用支援">
+  <meta property="og:description" content="運送業専門の採用支援サービス。掲載3週間でドライバー応募8件など実績多数。先着30社限定・無料資料プレゼント中。">
+  <meta property="og:image" content="https://dora-saiyo.com/images/ogp.png">
+  <meta property="og:type" content="website">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: {
+              DEFAULT: '#1976d2',
+              dark: '#1565c0',
+            }
+          },
+          fontFamily: {
+            sans: ['"Noto Sans JP"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Noto Sans JP', sans-serif; }
+    html { scroll-behavior: smooth; }
+
+    .btn-cta {
+      transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+    }
+    .btn-cta:hover {
+      background-color: #1565c0;
+      transform: scale(1.03);
+      box-shadow: 0 0 32px rgba(25, 118, 210, 0.5);
+    }
+    .btn-cta:active { transform: scale(0.98); }
+
+    details summary {
+      cursor: pointer;
+      list-style: none;
+    }
+    details summary::-webkit-details-marker { display: none; }
+    details summary::after {
+      content: '+';
+      float: right;
+      font-size: 1.25rem;
+      color: #1976d2;
+      transition: transform 0.2s ease;
+    }
+    details[open] summary::after {
+      transform: rotate(45deg);
+    }
+
+    .case-img-placeholder {
+      background-color: #2a2a2a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 1rem;
+      aspect-ratio: 16/9;
+    }
+
+    .scroll-bounce {
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0) translateX(-50%); }
+      50% { transform: translateY(6px) translateX(-50%); }
+    }
+  </style>
+</head>
+<body class="antialiased bg-black text-white">
+
+  <!-- ========== SECTION 1: FIRSTVIEW ========== -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6 relative overflow-hidden bg-black">
+
+    <!-- パーソナライズバナー（JS で表示制御） -->
+    <div id="personalize-banner" class="hidden absolute top-0 left-0 right-0 bg-gray-900 border-b border-gray-800 py-3 px-4 text-center text-sm text-gray-300 z-20">
+      <span id="personalize-text"></span>
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto pt-16">
+
+      <!-- 希少性バッジ -->
+      <div class="inline-block mb-6">
+        <span class="text-white text-xs font-black px-4 py-1.5 rounded-full tracking-wide" style="background:#1976d2;">
+          先着30社限定・無料
+        </span>
+      </div>
+
+      <!-- ブランド名 -->
+      <h1 class="font-black leading-none mb-4" style="font-size: clamp(3rem, 12vw, 7rem); color: #1976d2; letter-spacing: -0.02em;">
+        ドラ採用
+      </h1>
+
+      <!-- サブコピー -->
+      <p class="text-gray-300 font-medium mb-12" style="font-size: clamp(1rem, 3vw, 1.5rem);">
+        運送業専門の採用支援
+      </p>
+
+      <!-- CTAボタン -->
+      <a href="#contact"
+        class="btn-cta inline-block text-white font-black rounded-full shadow-2xl"
+        style="background:#1976d2; font-size: clamp(1rem, 3vw, 1.2rem); padding: clamp(1rem, 2.5vw, 1.25rem) clamp(2rem, 6vw, 3.5rem);">
+        今すぐ資料をダウンロードする
+      </a>
+    </div>
+
+    <div class="absolute bottom-10 left-1/2 scroll-bounce">
+      <svg width="24" height="24" fill="none" stroke="#1976d2" stroke-width="2.5" viewBox="0 0 24 24">
+        <path d="M12 5v14M5 13l7 7 7-7"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 2: 実績事例 ========== -->
+  <section class="py-20 px-6 bg-black">
+    <div class="max-w-5xl mx-auto">
+
+      <h2 class="text-white font-black text-center mb-16" style="font-size: clamp(1.5rem, 4vw, 2.5rem);">
+        実績事例
+      </h2>
+
+      <!-- 2x2 グリッド -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- case1 -->
+        <div class="border border-gray-800 rounded-2xl overflow-hidden">
+          <div class="case-img-placeholder">
+            <img src="images/case1.png" alt="運送会社A社の採用事例"
+              class="w-full h-full object-cover rounded-2xl"
+              loading="lazy"
+              onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder-label').style.display='flex';">
+            <div class="placeholder-label hidden flex-col items-center justify-center text-gray-600 w-full h-full" style="display:none;">
+              <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" class="mb-2 opacity-40">
+                <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/>
+              </svg>
+              <span class="text-sm opacity-40">事例画像</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="inline-block text-white text-xs font-bold px-3 py-1 rounded-full mb-3" style="background:#1976d2;">
+              運送
+            </div>
+            <p class="text-white font-black text-xl mb-2">掲載3週間でドライバー応募8件</p>
+            <p class="text-gray-400 text-sm">運送会社A社。ドライバー向けコンテンツを強化し、短期間で複数の応募を獲得。</p>
+          </div>
+        </div>
+
+        <!-- case2 -->
+        <div class="border border-gray-800 rounded-2xl overflow-hidden">
+          <div class="case-img-placeholder">
+            <img src="images/case2.png" alt="物流B社の採用事例"
+              class="w-full h-full object-cover rounded-2xl"
+              loading="lazy"
+              onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder-label').style.display='flex';">
+            <div class="placeholder-label hidden flex-col items-center justify-center text-gray-600 w-full h-full" style="display:none;">
+              <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" class="mb-2 opacity-40">
+                <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/>
+              </svg>
+              <span class="text-sm opacity-40">事例画像</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="inline-block text-white text-xs font-bold px-3 py-1 rounded-full mb-3" style="background:#1976d2;">
+              物流
+            </div>
+            <p class="text-white font-black text-xl mb-2">3ヶ月で大型免許保持者2名採用</p>
+            <p class="text-gray-400 text-sm">物流B社。希少な大型免許保持者に特化したターゲティングで採用に成功。</p>
+          </div>
+        </div>
+
+        <!-- case3 -->
+        <div class="border border-gray-800 rounded-2xl overflow-hidden">
+          <div class="case-img-placeholder">
+            <img src="images/case3.png" alt="配送C社の採用事例"
+              class="w-full h-full object-cover rounded-2xl"
+              loading="lazy"
+              onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder-label').style.display='flex';">
+            <div class="placeholder-label hidden flex-col items-center justify-center text-gray-600 w-full h-full" style="display:none;">
+              <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" class="mb-2 opacity-40">
+                <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/>
+              </svg>
+              <span class="text-sm opacity-40">事例画像</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="inline-block text-white text-xs font-bold px-3 py-1 rounded-full mb-3" style="background:#1976d2;">
+              配送
+            </div>
+            <p class="text-white font-black text-xl mb-2">応募単価 10万→3万に</p>
+            <p class="text-gray-400 text-sm">配送C社。採用コストを70%削減しながら応募数を維持・向上。</p>
+          </div>
+        </div>
+
+        <!-- case4 -->
+        <div class="border border-gray-800 rounded-2xl overflow-hidden">
+          <div class="case-img-placeholder">
+            <img src="images/case4.png" alt="運輸D社の採用事例"
+              class="w-full h-full object-cover rounded-2xl"
+              loading="lazy"
+              onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder-label').style.display='flex';">
+            <div class="placeholder-label hidden flex-col items-center justify-center text-gray-600 w-full h-full" style="display:none;">
+              <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" class="mb-2 opacity-40">
+                <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/>
+              </svg>
+              <span class="text-sm opacity-40">事例画像</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="inline-block text-white text-xs font-bold px-3 py-1 rounded-full mb-3" style="background:#1976d2;">
+              運輸
+            </div>
+            <p class="text-white font-black text-xl mb-2">求人表示回数5倍</p>
+            <p class="text-gray-400 text-sm">運輸D社。求人の見せ方を最適化し、掲載直後から露出が急拡大。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 3: 導入の流れ ========== -->
+  <section class="py-20 px-6 bg-gray-950">
+    <div class="max-w-3xl mx-auto">
+
+      <h2 class="text-white font-black text-center mb-16" style="font-size: clamp(1.5rem, 4vw, 2.5rem);">
+        導入の流れ
+      </h2>
+
+      <div class="space-y-8">
+
+        <!-- Step1 -->
+        <div class="flex items-start gap-6">
+          <div class="flex-shrink-0 w-14 h-14 rounded-full flex items-center justify-center font-black text-xl" style="background:#1976d2; color:#fff;">
+            1
+          </div>
+          <div>
+            <p class="text-xs font-bold tracking-widest uppercase mb-1" style="color:#1976d2;">Step 1</p>
+            <p class="text-white font-bold text-lg mb-1">無料診断レポート受け取り</p>
+            <p class="text-gray-400 text-sm">フォームにご入力いただくと、貴社の採用課題を診断したレポートを無料でお送りします。</p>
+          </div>
+        </div>
+
+        <!-- 矢印 -->
+        <div class="flex justify-center">
+          <svg width="24" height="24" fill="none" stroke="#1976d2" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M12 5v14M5 13l7 7 7-7"/>
+          </svg>
+        </div>
+
+        <!-- Step2 -->
+        <div class="flex items-start gap-6">
+          <div class="flex-shrink-0 w-14 h-14 rounded-full flex items-center justify-center font-black text-xl" style="background:#1976d2; color:#fff;">
+            2
+          </div>
+          <div>
+            <p class="text-xs font-bold tracking-widest uppercase mb-1" style="color:#1976d2;">Step 2</p>
+            <p class="text-white font-bold text-lg mb-1">専任コンサルタントとの打合せ</p>
+            <p class="text-gray-400 text-sm">運送業採用のプロが現状をヒアリングし、最適な採用戦略をご提案します。オンライン30分が目安です。</p>
+          </div>
+        </div>
+
+        <!-- 矢印 -->
+        <div class="flex justify-center">
+          <svg width="24" height="24" fill="none" stroke="#1976d2" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M12 5v14M5 13l7 7 7-7"/>
+          </svg>
+        </div>
+
+        <!-- Step3 -->
+        <div class="flex items-start gap-6">
+          <div class="flex-shrink-0 w-14 h-14 rounded-full flex items-center justify-center font-black text-xl" style="background:#1976d2; color:#fff;">
+            3
+          </div>
+          <div>
+            <p class="text-xs font-bold tracking-widest uppercase mb-1" style="color:#1976d2;">Step 3</p>
+            <p class="text-white font-bold text-lg mb-1">採用ページ制作・掲載開始</p>
+            <p class="text-gray-400 text-sm">専任チームが採用ページを制作し、求人媒体への掲載を開始。最短10日で応募が来る状態をつくります。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 4: FAQ ========== -->
+  <section class="py-20 px-6 bg-black">
+    <div class="max-w-3xl mx-auto">
+
+      <h2 class="text-white font-black text-center mb-16" style="font-size: clamp(1.5rem, 4vw, 2.5rem);">
+        よくある質問
+      </h2>
+
+      <div class="space-y-4">
+
+        <details class="border border-gray-800 rounded-2xl p-6 group">
+          <summary class="text-white font-bold text-base pr-8">
+            費用はどのくらいですか？
+          </summary>
+          <p class="text-gray-400 text-sm mt-4 leading-relaxed">
+            月額3.9万円〜ご利用いただけます。初期費用は無料です。プランの詳細は無料相談時にご説明します。
+          </p>
+        </details>
+
+        <details class="border border-gray-800 rounded-2xl p-6 group">
+          <summary class="text-white font-bold text-base pr-8">
+            最低契約期間はありますか？
+          </summary>
+          <p class="text-gray-400 text-sm mt-4 leading-relaxed">
+            詳しくは無料相談でご説明します。まずはお気軽にご相談ください。
+          </p>
+        </details>
+
+        <details class="border border-gray-800 rounded-2xl p-6 group">
+          <summary class="text-white font-bold text-base pr-8">
+            どんな業種に対応していますか？
+          </summary>
+          <p class="text-gray-400 text-sm mt-4 leading-relaxed">
+            運送業全般に対応しています。大型ドライバー・中型・軽貨物・倉庫管理など幅広い職種の採用実績があります。
+          </p>
+        </details>
+
+        <details class="border border-gray-800 rounded-2xl p-6 group">
+          <summary class="text-white font-bold text-base pr-8">
+            効果が出るまでの期間は？
+          </summary>
+          <p class="text-gray-400 text-sm mt-4 leading-relaxed">
+            早い企業で掲載10日後から応募が来始めます。平均3ヶ月で応募数が2倍以上になっています。
+          </p>
+        </details>
+
+        <details class="border border-gray-800 rounded-2xl p-6 group">
+          <summary class="text-white font-bold text-base pr-8">
+            既に求人媒体を使っていますが、併用できますか？
+          </summary>
+          <p class="text-gray-400 text-sm mt-4 leading-relaxed">
+            はい、併用可能です。現在お使いの媒体の効果を最大化しながら、新たな採用チャネルも構築します。
+          </p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION 5: 資料請求フォーム ========== -->
+  <section id="contact" class="py-20 px-6 bg-gray-950">
+    <div class="max-w-xl mx-auto">
+
+      <h2 class="text-white font-black text-center mb-3" style="font-size: clamp(1.4rem, 4vw, 2rem);">
+        無料資料をダウンロードする
+      </h2>
+      <p class="text-gray-400 text-center text-sm mb-10">先着30社限定。30秒で入力できます。</p>
+
+      <form id="contactForm" class="space-y-4" novalidate>
+
+        <!-- 隠しフィールド（パーソナライズ用） -->
+        <input type="hidden" id="lead_id" name="lead_id">
+        <input type="hidden" id="lead_company" name="lead_company">
+        <input type="hidden" id="lead_area" name="lead_area">
+        <input type="hidden" id="lead_job_type" name="lead_job_type">
+
+        <div>
+          <label class="block text-white text-sm font-bold mb-1">
+            会社名 <span style="color:#1976d2;">*</span>
+          </label>
+          <input type="text" id="company" name="company" required
+            class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:bg-white/20 transition"
+            style="transition: border-color 0.2s;"
+            onfocus="this.style.borderColor='#1976d2'"
+            onblur="this.style.borderColor='rgba(255,255,255,0.2)'"
+            placeholder="株式会社〇〇運送">
+          <p id="companyError" class="text-xs mt-1 hidden" style="color:#1976d2;">会社名を入力してください</p>
+        </div>
+
+        <div>
+          <label class="block text-white text-sm font-bold mb-1">
+            担当者名 <span style="color:#1976d2;">*</span>
+          </label>
+          <input type="text" id="name" name="name" required
+            class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:bg-white/20 transition"
+            onfocus="this.style.borderColor='#1976d2'"
+            onblur="this.style.borderColor='rgba(255,255,255,0.2)'"
+            placeholder="山田 太郎">
+          <p id="nameError" class="text-xs mt-1 hidden" style="color:#1976d2;">担当者名を入力してください</p>
+        </div>
+
+        <div>
+          <label class="block text-white text-sm font-bold mb-1">
+            メールアドレス <span style="color:#1976d2;">*</span>
+          </label>
+          <input type="email" id="email" name="email" required
+            class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:bg-white/20 transition"
+            onfocus="this.style.borderColor='#1976d2'"
+            onblur="this.style.borderColor='rgba(255,255,255,0.2)'"
+            placeholder="info@example.co.jp">
+          <p id="emailError" class="text-xs mt-1 hidden" style="color:#1976d2;">正しいメールアドレスを入力してください</p>
+        </div>
+
+        <div>
+          <label class="block text-white text-sm font-bold mb-1">
+            電話番号 <span style="color:#1976d2;">*</span>
+          </label>
+          <input type="tel" id="phone" name="phone" required
+            class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:bg-white/20 transition"
+            onfocus="this.style.borderColor='#1976d2'"
+            onblur="this.style.borderColor='rgba(255,255,255,0.2)'"
+            placeholder="03-1234-5678">
+          <p id="phoneError" class="text-xs mt-1 hidden" style="color:#1976d2;">電話番号を入力してください</p>
+        </div>
+
+        <div id="formMessage" class="hidden rounded-lg p-4 text-center font-bold"></div>
+
+        <button type="submit" id="submitBtn"
+          class="btn-cta w-full font-black text-lg py-5 rounded-full shadow-2xl mt-2 text-white"
+          style="background:#1976d2;">
+          今すぐ資料をダウンロードする
+        </button>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-black border-t border-gray-900 text-gray-500 py-10 px-6 text-center">
+    <p class="text-white font-bold text-base mb-2">FRUOR株式会社</p>
+    <p class="text-sm mb-1">東京都新宿区西新宿3-7-30 フロンティアグラン西新宿1202</p>
+    <p class="text-sm mb-4">TEL: 03-6848-0217</p>
+    <p class="text-xs">© 2026 FRUOR Inc. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // ============================================================
+    // パーソナライズ: ?id=xxxxx からリード情報を取得し表示に反映
+    // ============================================================
+    const GAS_API_URL = 'https://script.google.com/macros/s/XXXXXX/exec';
+    const GAS_FORM_URL = 'https://script.google.com/macros/s/XXXXXX/exec';
+
+    /**
+     * 文字列をXSS安全にエスケープする
+     * @param {string} str
+     * @returns {string}
+     */
+    function escapeHtml(str) {
+      if (typeof str !== 'string') return '';
+      return str
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    /**
+     * URLパラメータからidを取得し、GAS APIでリード情報を取得する
+     * 取得成功時はファーストビューにパーソナライズ表示を反映する
+     */
+    async function initPersonalize() {
+      const params = new URLSearchParams(window.location.search);
+      const leadId = params.get('id');
+
+      if (!leadId) return;
+
+      // 隠しフィールドにIDをセット
+      const leadIdField = document.getElementById('lead_id');
+      if (leadIdField) leadIdField.value = escapeHtml(leadId);
+
+      try {
+        const url = new URL(GAS_API_URL);
+        url.searchParams.set('id', leadId);
+
+        const res = await fetch(url.toString(), { mode: 'cors' });
+        if (!res.ok) return;
+
+        const data = await res.json();
+
+        const companyName = data.company_name || '';
+        const area = data.area || '';
+        const jobType = data.job_type || '';
+
+        // 隠しフィールドをセット
+        const leadCompanyField = document.getElementById('lead_company');
+        const leadAreaField = document.getElementById('lead_area');
+        const leadJobTypeField = document.getElementById('lead_job_type');
+        if (leadCompanyField) leadCompanyField.value = escapeHtml(companyName);
+        if (leadAreaField) leadAreaField.value = escapeHtml(area);
+        if (leadJobTypeField) leadJobTypeField.value = escapeHtml(jobType);
+
+        // パーソナライズバナーを表示
+        if (companyName) {
+          const banner = document.getElementById('personalize-banner');
+          const text = document.getElementById('personalize-text');
+          if (banner && text) {
+            const parts = [escapeHtml(companyName) + '様'];
+            if (area) parts.push(escapeHtml(area));
+            if (jobType) parts.push(escapeHtml(jobType) + 'の採用枠');
+            text.innerHTML = parts.join(' ─ ');
+            banner.classList.remove('hidden');
+          }
+        }
+      } catch (_err) {
+        // API取得失敗時は汎用表示のままにする（エラーは表示しない）
+      }
+    }
+
+    initPersonalize();
+
+    // ============================================================
+    // スムーズスクロール
+    // ============================================================
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // ============================================================
+    // フォームバリデーションと送信
+    // ============================================================
+
+    /**
+     * エラーメッセージの表示/非表示を切り替える
+     * @param {string} id - エラー要素のID
+     * @param {boolean} show
+     */
+    function showError(id, show) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      if (show) {
+        el.classList.remove('hidden');
+      } else {
+        el.classList.add('hidden');
+      }
+    }
+
+    /**
+     * メールアドレスの形式を検証する
+     * @param {string} email
+     * @returns {boolean}
+     */
+    function validateEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const company = document.getElementById('company').value.trim();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+
+      let hasError = false;
+
+      showError('companyError', !company);
+      showError('nameError', !name);
+      showError('emailError', !email || !validateEmail(email));
+      showError('phoneError', !phone);
+
+      if (!company || !name || !email || !validateEmail(email) || !phone) {
+        hasError = true;
+      }
+
+      if (hasError) return;
+
+      const submitBtn = document.getElementById('submitBtn');
+      const formMessage = document.getElementById('formMessage');
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = '送信中...';
+
+      const formData = {
+        company,
+        name,
+        email,
+        phone,
+        lead_id: document.getElementById('lead_id').value,
+        lead_company: document.getElementById('lead_company').value,
+        lead_area: document.getElementById('lead_area').value,
+        lead_job_type: document.getElementById('lead_job_type').value,
+        industry: '運送業',
+        service: 'ドラ採用',
+        submitted_at: new Date().toISOString()
+      };
+
+      try {
+        await fetch(GAS_FORM_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
+        });
+
+        formMessage.className = 'rounded-lg p-4 text-center font-bold bg-green-500/20 border border-green-400 text-green-300';
+        formMessage.textContent = 'ありがとうございます。担当者より2営業日以内にご連絡いたします。';
+        formMessage.classList.remove('hidden');
+
+        document.getElementById('contactForm').reset();
+        submitBtn.textContent = '送信完了';
+      } catch (_err) {
+        formMessage.className = 'rounded-lg p-4 text-center font-bold bg-red-500/20 border border-red-400 text-red-300';
+        formMessage.textContent = '送信に失敗しました。お手数ですが、お電話（03-6848-0217）にてお問い合わせください。';
+        formMessage.classList.remove('hidden');
+        submitBtn.disabled = false;
+        submitBtn.textContent = '今すぐ資料をダウンロードする';
+      }
+    });
+  </script>
+
+</body>
+</html>

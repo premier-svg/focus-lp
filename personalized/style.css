@@ -1,0 +1,112 @@
+/* ===== Base ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: #000000;
+  color: #ffffff;
+}
+
+/* ===== Loading Spinner ===== */
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255, 109, 0, 0.2);
+  border-top-color: #ff6d00;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===== Buttons ===== */
+.btn-orange {
+  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-orange:hover {
+  background-color: #e65100 !important;
+  transform: scale(1.03);
+  box-shadow: 0 8px 30px rgba(255, 109, 0, 0.5);
+}
+
+.btn-orange:active {
+  transform: scale(0.98);
+}
+
+.btn-outline {
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.03);
+}
+
+.btn-outline:active {
+  transform: scale(0.98);
+}
+
+/* ===== Scroll Bounce ===== */
+@keyframes scroll-bounce {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 0.5;
+  }
+}
+
+.scroll-bounce {
+  animation: scroll-bounce 1.8s ease-in-out infinite;
+}
+
+/* ===== Hero Company Name ===== */
+.hero-company-name {
+  display: inline-block;
+  border-bottom: 3px solid #ff6d00;
+  padding-bottom: 4px;
+}
+
+/* ===== Form Inputs ===== */
+.form-input {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-input:focus {
+  border-color: #ff6d00;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* ===== Form Messages ===== */
+.form-message-success {
+  background: rgba(34, 197, 94, 0.15);
+  border: 1px solid rgba(134, 239, 172, 0.5);
+  color: #86efac;
+}
+
+.form-message-error {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(252, 165, 165, 0.5);
+  color: #fca5a5;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero-company-name {
+    font-size: 1.8rem;
+  }
+
+  #timerexFrame {
+    height: 500px;
+  }
+}
