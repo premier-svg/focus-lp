@@ -14,7 +14,7 @@
     body{font-family:'Noto Sans JP',sans-serif;color:#1A1A2E;-webkit-font-smoothing:antialiased}
     .wrap{max-width:960px;margin:0 auto;padding:0 40px}
 
-    /* ===== BLOCK 1: FV (dark) ===== */
+    /* ===== BLOCK 1: FV ===== */
     .fv{min-height:100vh;display:flex;align-items:center;justify-content:center;background:#1A1A2E;color:#fff}
     .fv-inner{text-align:center;padding:48px 0}
     .pz{display:none;background:rgba(255,107,53,.12);border:1px solid rgba(255,107,53,.35);border-radius:8px;padding:8px 22px;color:#ffab00;font-size:15px;font-weight:700;margin-bottom:28px}
@@ -28,8 +28,11 @@
     .fb-l{font-size:13px;color:#b0b0b0;font-weight:700;margin-top:8px}
     .btn-cta{display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#FF6B35,#ff8f00);color:#fff;font-size:20px;font-weight:900;padding:20px 56px;border-radius:50px;border:none;cursor:pointer;text-decoration:none;font-family:'Noto Sans JP',sans-serif;box-shadow:0 4px 24px rgba(255,107,53,.4);transition:transform .2s,box-shadow .3s}
     .btn-cta:hover{transform:translateY(-3px);box-shadow:0 8px 36px rgba(255,107,53,.55)}
+    .fv-sub-cta{margin-top:20px}
+    .fv-sub-cta a{color:rgba(255,255,255,.6);font-size:14px;font-weight:700;text-decoration:none;border-bottom:1px dashed rgba(255,255,255,.3);transition:color .2s}
+    .fv-sub-cta a:hover{color:#fff}
 
-    /* ===== BLOCK 2: Pain (white) ===== */
+    /* ===== BLOCK 2: Pain ===== */
     .pain{padding:88px 0;background:#fff}
     .sec-t{font-size:32px;font-weight:900;text-align:center;line-height:1.35;margin-bottom:12px;color:#1A1A2E}
     .sec-s{font-size:15px;color:#888;text-align:center;margin-bottom:40px}
@@ -41,7 +44,7 @@
     .pain-btm{text-align:center;margin-top:32px;font-size:15px;color:#888;line-height:1.7}
     .pain-btm strong{color:#FF6B35;font-weight:900}
 
-    /* ===== BLOCK 3: Solution (light gray) ===== */
+    /* ===== BLOCK 3: Solution ===== */
     .sol{padding:88px 0;background:#F5F5F7}
     .sol-cards{display:flex;flex-direction:column;gap:16px;margin-top:40px}
     .sc{display:flex;align-items:flex-start;gap:18px;background:#fff;border:1px solid #eee;border-radius:14px;padding:24px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
@@ -51,7 +54,7 @@
     .sc-title .ac{color:#FF6B35}
     .sc-desc{font-size:14px;color:#777;line-height:1.7}
 
-    /* ===== BLOCK 4: Numbers (white) ===== */
+    /* ===== BLOCK 4: Numbers ===== */
     .nums{padding:88px 0;background:#fff}
     .n-cards{display:flex;flex-direction:column;gap:16px}
     .nc{display:flex;align-items:center;gap:24px;background:#FAFAFA;border:1px solid #eee;border-radius:14px;padding:24px 28px}
@@ -62,8 +65,8 @@
     .nc-d{font-size:13px;color:#999}
     .n-btm{text-align:center;margin-top:32px;font-size:16px;font-weight:700;color:#FF6B35}
 
-    /* ===== BLOCK 5: Cases (light orange) ===== */
-    .cases{padding:88px 0;background:#FFF8F3}
+    /* ===== BLOCK 5: Cases ===== */
+    .cases{padding:88px 0;background:#FFF5F0}
     .case-list{display:flex;flex-direction:column;gap:20px}
     .cc{background:#fff;border:1px solid #f0e0d0;border-radius:16px;padding:28px 24px;box-shadow:0 2px 8px rgba(0,0,0,.03)}
     .cc-tag{display:inline-block;background:#FFF0E6;color:#FF6B35;font-size:12px;font-weight:700;padding:4px 12px;border-radius:6px;margin-bottom:14px}
@@ -75,20 +78,20 @@
     .cc-val .org{color:#FF6B35;font-weight:900}
     .cc-quote{background:#FAFAFA;border-left:3px solid #FF6B35;border-radius:0 8px 8px 0;padding:14px 18px;font-size:14px;font-style:italic;color:#555;line-height:1.7}
 
-    /* ===== BLOCK 6: Compare (light gray) ===== */
+    /* ===== BLOCK 6: Compare ===== */
     .cmp{padding:88px 0;background:#F5F5F7}
     .cmp-tbl{width:100%;border-collapse:separate;border-spacing:0;border-radius:14px;overflow:hidden;background:#fff;border:1px solid #eee}
     .cmp-tbl th,.cmp-tbl td{padding:16px 14px;text-align:center;font-size:14px;border-bottom:1px solid #f0f0f0}
-    .cmp-tbl th{background:#FAFAFA;font-weight:700;color:#999;font-size:13px}
-    .cmp-tbl th.us{color:#FF6B35;font-size:15px;font-weight:900;border-top:3px solid #FF6B35}
-    .cmp-tbl .us{background:#FFF0E6;border-left:2px solid rgba(255,107,53,.3);border-right:2px solid rgba(255,107,53,.3)}
-    .cmp-tbl tbody tr:last-child .us{border-bottom:3px solid #FF6B35}
+    .cmp-tbl thead th{background:#FAFAFA;font-weight:700;color:#999;font-size:13px}
+    .cmp-tbl thead th.us{background:#FF6B35;color:#fff;font-size:15px;font-weight:900}
+    .cmp-tbl .us{background:#FFF0E6}
     .cmp-tbl .ft{text-align:left;font-weight:700;color:#333}
     .o{color:#FF6B35;font-weight:900;font-size:16px}
     .x{color:#ccc;font-size:16px}
-    .t{color:#aaa;font-size:16px}
+    .tri{color:#aaa;font-size:16px}
+    .cmp-tbl td.detail{font-size:12px;color:#999;font-weight:400}
 
-    /* ===== BLOCK 7: CTA Form (dark) ===== */
+    /* ===== BLOCK 7: CTA Form ===== */
     .cta-sec{padding:88px 0 100px;background:#1A1A2E}
     .fw{max-width:560px;margin:0 auto;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:44px 32px;backdrop-filter:blur(12px)}
     .fw-t{font-size:26px;font-weight:900;text-align:center;margin-bottom:8px;color:#fff}
@@ -138,7 +141,7 @@
 </head>
 <body>
 
-  <!-- BLOCK 1: FV (dark) -->
+  <!-- ===== BLOCK 1: FV (dark navy) ===== -->
   <section class="fv">
     <div class="wrap">
       <div class="fv-inner">
@@ -150,12 +153,13 @@
           <div class="fb"><p class="fb-n">10<span class="u">日</span></p><p class="fb-l">最短採用実績</p></div>
           <div class="fb"><p class="fb-n">80<span class="u">%</span></p><p class="fb-l">採用コスト削減</p></div>
         </div>
-        <a href="#form-section" class="btn-cta">無料で資料をダウンロード ▼</a>
+        <a href="#form-section" class="btn-cta">まずは無料で相談する ▼</a>
+        <div class="fv-sub-cta"><a href="https://timerex.net/s/premier_47e4/c39c95c9" target="_blank" rel="noopener">今すぐ日程を選んで相談する →</a></div>
       </div>
     </div>
   </section>
 
-  <!-- BLOCK 2: Pain (white) -->
+  <!-- ===== BLOCK 2: Pain (white) ===== -->
   <section class="pain">
     <div class="wrap">
       <h2 class="sec-t">こんなお悩み、<br>ありませんか？</h2>
@@ -169,7 +173,7 @@
     </div>
   </section>
 
-  <!-- BLOCK 3: Solution (light gray) -->
+  <!-- ===== BLOCK 3: Solution (light gray) ===== -->
   <section class="sol">
     <div class="wrap">
       <h2 class="sec-t">ガテン採用が<br>選ばれる<span style="color:#FF6B35">3つ</span>の理由</h2>
@@ -181,45 +185,42 @@
     </div>
   </section>
 
-  <!-- BLOCK 4: Numbers (white) -->
+  <!-- ===== BLOCK 4: Numbers (white) ===== -->
   <section class="nums">
     <div class="wrap">
       <h2 class="sec-t">選ばれている理由を、<br>数字で。</h2>
       <p class="sec-s">建設業に特化してきたからこその実績</p>
       <div class="n-cards">
         <div class="nc"><div class="nc-v">1,000<span class="nu">社+</span></div><div class="nc-body"><p class="nc-t">累計導入社数</p><p class="nc-d">建設・運送・製造を中心に、全国の中小企業が導入</p></div></div>
-        <div class="nc"><div class="nc-v">10<span class="nu">日</span></div><div class="nc-body"><p class="nc-t">開始10日で2名応募 → 1名採用</p><p class="nc-d">型枠工事会社の実例。掲載からわずか10日で採用成功</p></div></div>
-        <div class="nc"><div class="nc-v">400<span class="nu">名+</span></div><div class="nc-body"><p class="nc-t">3ヶ月で400名以上の応募</p><p class="nc-d">自社採用で実証済みの手法を、そのまま貴社にも展開</p></div></div>
+        <div class="nc"><div class="nc-v">10<span class="nu">日</span></div><div class="nc-body"><p class="nc-t">開始10日で応募が届き、採用まで実現</p><p class="nc-d">型枠工事会社の実例。掲載からわずか10日で採用成功</p></div></div>
+        <div class="nc"><div class="nc-v">400<span class="nu">名+</span></div><div class="nc-body"><p class="nc-t">自社採用で3ヶ月間に集めた応募数</p><p class="nc-d">自社で実証済みの手法を、そのまま貴社にも展開</p></div></div>
       </div>
       <p class="n-btm">同じ仕組みを、貴社の採用にも。</p>
     </div>
   </section>
 
-  <!-- BLOCK 5: Cases (light orange) -->
+  <!-- ===== BLOCK 5: Cases (light orange) ===== -->
   <section class="cases">
     <div class="wrap">
       <h2 class="sec-t">導入企業の声</h2>
       <p class="sec-s">実際に成果が出た企業様の事例</p>
       <div class="case-list">
-
         <div class="cc">
-          <div class="cc-tag">建設会社（型枠工事）</div>
+          <div class="cc-tag">建設会社（社名非公開）</div>
           <div class="cc-row">
             <div class="cc-block"><p class="cc-label">導入前の課題</p><p class="cc-val"><span class="red">半年間、求人広告に100万円以上</span>かけたが応募ゼロ。人材紹介も高額で手が出なかった。</p></div>
             <div class="cc-block"><p class="cc-label">導入後の成果</p><p class="cc-val">開始<span class="org">10日で2名の応募</span>。うち1名を採用。現在も定着して活躍中。</p></div>
           </div>
           <div class="cc-quote">「正直、半信半疑でしたが、こんなにすぐ結果が出るとは思いませんでした。もっと早く相談すればよかったです。」</div>
         </div>
-
         <div class="cc">
-          <div class="cc-tag">建設会社（土木作業員）</div>
+          <div class="cc-tag">電気工事会社（社名非公開）</div>
           <div class="cc-row">
-            <div class="cc-block"><p class="cc-label">導入前の課題</p><p class="cc-val">求人サイト3社に掲載して<span class="red">月額50万円以上</span>。応募はあるがミスマッチばかりで定着しない。</p></div>
-            <div class="cc-block"><p class="cc-label">導入後の成果</p><p class="cc-val">ガテン採用に一本化後、<span class="org">月3名の質の高い応募</span>を獲得。採用コスト60%削減。</p></div>
+            <div class="cc-block"><p class="cc-label">導入前の課題</p><p class="cc-val"><span class="red">求人媒体を3社使っていたが、応募の質が低く</span>採用に至らなかった。</p></div>
+            <div class="cc-block"><p class="cc-label">導入後の成果</p><p class="cc-val">ガテン採用に一本化後、<span class="org">月3名の質の高い応募を獲得。採用コスト60%削減</span>。</p></div>
           </div>
           <div class="cc-quote">「応募の"質"がまるで違います。ミスマッチが減って定着率も上がりました。」</div>
         </div>
-
         <div class="cc">
           <div class="cc-tag">自社採用での実証</div>
           <div class="cc-row">
@@ -228,44 +229,47 @@
           </div>
           <div class="cc-quote">「お客様にご提案する前に、まず自分たちで結果を出しています。」</div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- BLOCK 6: Compare (light gray) -->
+  <!-- ===== BLOCK 6: Compare (light gray) ===== -->
   <section class="cmp">
     <div class="wrap">
       <h2 class="sec-t">他社との比較</h2>
       <p class="sec-s">同じ予算でも、成果が違います</p>
       <table class="cmp-tbl">
         <thead><tr>
-          <th></th><th class="us">ガテン採用</th><th>求人広告A社</th><th>人材紹介B社</th>
+          <th></th>
+          <th class="us">ガテン採用</th>
+          <th>求人広告A社</th>
+          <th>人材紹介B社</th>
         </tr></thead>
         <tbody>
-          <tr><td class="ft">初期費用</td><td class="us"><span class="o">◎</span> 0円</td><td><span class="x">×</span></td><td><span class="x">×</span></td></tr>
-          <tr><td class="ft">月額費用</td><td class="us"><span class="o">◎</span> 3.9万円〜</td><td><span class="x">×</span> 高額</td><td><span class="x">×</span> 成功報酬</td></tr>
+          <tr><td class="ft">初期費用</td><td class="us"><span class="o">◎</span> 0円</td><td><span class="x">×</span> 30〜150万円</td><td><span class="x">×</span> 50万円〜</td></tr>
+          <tr><td class="ft">月額費用</td><td class="us"><span class="o">◎</span> 3.9万円〜</td><td><span class="x">×</span> 8万円〜</td><td><span class="x">×</span> 成功報酬(高額)</td></tr>
+          <tr><td class="ft">建設業特化</td><td class="us"><span class="o">◎</span></td><td><span class="x">×</span></td><td><span class="tri">△</span></td></tr>
           <tr><td class="ft">ABテスト改善</td><td class="us"><span class="o">◎</span></td><td><span class="x">×</span></td><td><span class="x">×</span></td></tr>
-          <tr><td class="ft">専任コンサル伴走</td><td class="us"><span class="o">◎</span></td><td><span class="x">×</span></td><td><span class="t">△</span></td></tr>
-          <tr><td class="ft">求人検索エンジン対応</td><td class="us"><span class="o">◎</span></td><td><span class="t">△</span></td><td><span class="t">△</span></td></tr>
+          <tr><td class="ft">専任コンサル伴走</td><td class="us"><span class="o">◎</span></td><td><span class="x">×</span></td><td><span class="tri">△</span></td></tr>
+          <tr><td class="ft">求人検索エンジン対応</td><td class="us"><span class="o">◎</span></td><td><span class="tri">△</span></td><td><span class="tri">△</span></td></tr>
         </tbody>
       </table>
     </div>
   </section>
 
-  <!-- BLOCK 7: CTA + Form (dark) -->
+  <!-- ===== BLOCK 7: CTA + Form (dark navy) ===== -->
   <section class="cta-sec" id="form-section">
     <div class="wrap">
       <div class="fw">
-        <h2 class="fw-t">まずは無料で資料をダウンロード</h2>
+        <h2 class="fw-t">まずは無料でご相談ください</h2>
         <p class="fw-s">30秒で完了・しつこい営業はしません</p>
-        <form id="short-form">
+        <form id="gaten-form">
           <div id="ferr" class="ferr"></div>
           <div class="fg"><label for="company">会社名 <span class="req">*</span></label><input type="text" id="company" name="company" placeholder="例：山田建設株式会社" required></div>
           <div class="fg"><label for="name">お名前 <span class="req">*</span></label><input type="text" id="name" name="name" placeholder="例：山田 太郎" required></div>
           <div class="fg"><label for="email">メールアドレス <span class="req">*</span></label><input type="email" id="email" name="email" placeholder="例：info@example.com" required></div>
           <div class="fg"><label for="phone">電話番号</label><input type="tel" id="phone" name="phone" placeholder="例：03-1234-5678"></div>
-          <button type="submit" class="sbtn">無料で資料をダウンロード</button>
+          <button type="submit" class="sbtn">無料で相談する</button>
           <p class="fnote">※ご入力いただいた情報は資料送付にのみ使用します</p>
         </form>
         <div class="sub-cta"><a href="https://timerex.net/s/premier_47e4/c39c95c9" target="_blank" rel="noopener">今すぐ日程を選んで相談する →</a></div>
@@ -274,23 +278,48 @@
   </section>
 
   <script>
-    var CONFIG={industry:'建設業',serviceName:'ガテン採用',gasEndpoint:'https://script.google.com/macros/s/AKfycbwVehb8tnAcDKbd6ZV_IzvPyBlX6gIS1PFGNpbVaWRLiVvC5rSARSCMZHzYk8LxANGn/exec'};
-    var params=new URLSearchParams(window.location.search);
-    var cp=params.get('company');
-    if(cp){var b=document.getElementById('pz');b.textContent=cp+' 様へ';b.style.display='inline-block';var ci=document.getElementById('company');if(ci)ci.value=cp}
-    document.getElementById('short-form').addEventListener('submit',async function(e){
+    // テンプレート変数（横展開用）
+    var CONFIG = {
+      industry: '建設業',
+      serviceName: 'ガテン採用',
+      gasEndpoint: 'https://script.google.com/macros/s/AKfycbwVehb8tnAcDKbd6ZV_IzvPyBlX6gIS1PFGNpbVaWRLiVvC5rSARSCMZHzYk8LxANGn/exec'
+    };
+
+    // パーソナライズ
+    var params = new URLSearchParams(window.location.search);
+    var cp = params.get('company');
+    if (cp) {
+      var b = document.getElementById('pz');
+      b.textContent = cp + ' 様へ';
+      b.style.display = 'inline-block';
+      var ci = document.getElementById('company');
+      if (ci) ci.value = cp;
+    }
+
+    // フォーム送信
+    document.getElementById('gaten-form').addEventListener('submit', async function(e) {
       e.preventDefault();
-      var f=e.target,btn=f.querySelector('.sbtn'),err=document.getElementById('ferr'),fw=f.closest('.fw');
-      err.style.display='none';var ot=btn.textContent;btn.textContent='送信中...';btn.disabled=true;
-      try{
-        var p=new URLSearchParams();
-        p.append('company',f.querySelector('#company').value);
-        p.append('name',f.querySelector('#name').value);
-        p.append('email',f.querySelector('#email').value);
-        p.append('phone',f.querySelector('#phone').value);
-        await fetch(CONFIG.gasEndpoint,{method:'POST',body:p,mode:'no-cors'});
-        fw.innerHTML='<div class="fsuc"><div class="fsuc-i">✅</div><p class="fsuc-t">お問い合わせありがとうございます</p><p class="fsuc-d">担当者より<strong>24時間以内</strong>にご連絡いたします。<br><br>メールが届かない場合は<br>迷惑メールフォルダをご確認ください。</p></div><div class="sub-cta" style="margin-top:24px"><a href="https://timerex.net/s/premier_47e4/c39c95c9" target="_blank" rel="noopener">今すぐ日程を選んで相談する →</a></div>';
-      }catch(er){err.textContent='送信に失敗しました。お手数ですがお電話でお問い合わせください。';err.style.display='block';btn.textContent=ot;btn.disabled=false}
+      var f = e.target, btn = f.querySelector('.sbtn'), err = document.getElementById('ferr'), fw = f.closest('.fw');
+      err.style.display = 'none';
+      var ot = btn.textContent;
+      btn.textContent = '送信中...';
+      btn.disabled = true;
+      try {
+        var p = new URLSearchParams();
+        p.append('company', f.querySelector('#company').value);
+        p.append('name', f.querySelector('#name').value);
+        p.append('email', f.querySelector('#email').value);
+        p.append('phone', f.querySelector('#phone').value);
+        await fetch(CONFIG.gasEndpoint, { method: 'POST', body: p, mode: 'no-cors' });
+        fw.innerHTML =
+          '<div class="fsuc"><div class="fsuc-i">✅</div><p class="fsuc-t">お問い合わせありがとうございます</p><p class="fsuc-d">担当者より<strong>24時間以内</strong>にご連絡いたします。<br><br>メールが届かない場合は<br>迷惑メールフォルダをご確認ください。</p></div>' +
+          '<div class="sub-cta" style="margin-top:24px"><a href="https://timerex.net/s/premier_47e4/c39c95c9" target="_blank" rel="noopener">今すぐ日程を選んで相談する →</a></div>';
+      } catch (er) {
+        err.textContent = '送信に失敗しました。お手数ですがお電話でお問い合わせください。';
+        err.style.display = 'block';
+        btn.textContent = ot;
+        btn.disabled = false;
+      }
     });
   </script>
 </body>
