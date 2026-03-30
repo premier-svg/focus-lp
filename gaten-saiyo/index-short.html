@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>ガテン採用｜建設業特化の採用支援</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: #0d0d1a;
+      font-family: 'Noto Sans JP', sans-serif;
+      color: #fff;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ===== BLOCK 1: FV ===== */
+    .fv {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      text-align: center;
+      background: linear-gradient(180deg, #0d0d1a 0%, #1a1a2e 100%);
+    }
+    .personalize {
+      display: none;
+      background: rgba(255,107,53,0.12);
+      border: 1px solid rgba(255,107,53,0.3);
+      border-radius: 8px;
+      padding: 8px 20px;
+      color: #ffab00;
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .fv-main {
+      font-size: 40px;
+      font-weight: 900;
+      line-height: 1.3;
+      margin-bottom: 16px;
+    }
+    .fv-main .accent { color: #ff6b35; }
+    .fv-sub {
+      font-size: 16px;
+      color: #c0c0c0;
+      line-height: 1.7;
+      margin-bottom: 40px;
+      max-width: 520px;
+    }
+    .badges {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .badge {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 12px;
+      padding: 16px 20px;
+      text-align: center;
+      min-width: 130px;
+      backdrop-filter: blur(8px);
+    }
+    .badge-num {
+      font-size: 32px;
+      font-weight: 900;
+      color: #ff6b35;
+      line-height: 1;
+    }
+    .badge-num .unit { font-size: 14px; color: #ff8f00; }
+    .badge-label {
+      font-size: 12px;
+      color: #c0c0c0;
+      font-weight: 700;
+      margin-top: 4px;
+    }
+    .fv-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ff6b35, #ff8f00);
+      color: #fff;
+      font-size: 18px;
+      font-weight: 900;
+      padding: 18px 48px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 0 24px rgba(255,107,53,0.4);
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+    .fv-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 36px rgba(255,107,53,0.6);
+    }
+
+    /* ===== BLOCK 2: 実績 ===== */
+    .results {
+      padding: 64px 24px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .section-title {
+      font-size: 28px;
+      font-weight: 900;
+      text-align: center;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+    .section-sub {
+      font-size: 14px;
+      color: #c0c0c0;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .result-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .result-card {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 12px;
+      padding: 20px 24px;
+      backdrop-filter: blur(8px);
+    }
+    .rc-num {
+      font-size: 48px;
+      font-weight: 900;
+      color: #ff6b35;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .rc-num .rc-unit { font-size: 20px; color: #ff8f00; }
+    .rc-body { flex: 1; }
+    .rc-title {
+      font-size: 16px;
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+    .rc-detail {
+      font-size: 12px;
+      color: #888;
+    }
+
+    /* ===== BLOCK 3: 比較表 ===== */
+    .compare {
+      padding: 64px 24px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.10);
+    }
+    .compare-table th,
+    .compare-table td {
+      padding: 14px 12px;
+      text-align: center;
+      font-size: 13px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .compare-table th {
+      background: rgba(255,255,255,0.06);
+      font-weight: 700;
+      color: #c0c0c0;
+      font-size: 12px;
+    }
+    .compare-table th.col-us {
+      color: #ff6b35;
+      font-size: 14px;
+      font-weight: 900;
+    }
+    .compare-table .col-us {
+      background: rgba(255,107,53,0.06);
+      border-left: 2px solid rgba(255,107,53,0.4);
+      border-right: 2px solid rgba(255,107,53,0.4);
+    }
+    .compare-table tr:last-child .col-us {
+      border-bottom: 2px solid rgba(255,107,53,0.4);
+    }
+    .compare-table th.col-us {
+      border-top: 2px solid rgba(255,107,53,0.4);
+    }
+    .compare-table td {
+      color: #c0c0c0;
+    }
+    .compare-table .feature-col {
+      text-align: left;
+      font-weight: 700;
+      color: #fff;
+    }
+    .icon-o { color: #ff6b35; font-weight: 900; font-size: 18px; }
+    .icon-x { color: #555; font-size: 18px; }
+    .icon-t { color: #888; font-size: 18px; }
+
+    /* ===== BLOCK 4: CTA + FORM ===== */
+    .cta-section {
+      padding: 64px 24px 80px;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+    .form-box {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 16px;
+      padding: 40px 28px;
+      backdrop-filter: blur(12px);
+    }
+    .form-title {
+      font-size: 24px;
+      font-weight: 900;
+      text-align: center;
+      margin-bottom: 6px;
+    }
+    .form-sub {
+      font-size: 14px;
+      color: #ff8f00;
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .fg { margin-bottom: 18px; }
+    .fg label {
+      font-size: 13px;
+      font-weight: 700;
+      color: #c0c0c0;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .fg .req { color: #e53935; }
+    .fg input {
+      width: 100%;
+      padding: 14px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px;
+      color: #fff;
+      font-size: 16px;
+      font-family: 'Noto Sans JP', sans-serif;
+      transition: border-color 0.3s;
+    }
+    .fg input::placeholder { color: rgba(255,255,255,0.25); }
+    .fg input:focus {
+      border-color: #ff6b35;
+      outline: none;
+      box-shadow: 0 0 8px rgba(255,107,53,0.3);
+    }
+    .submit-btn {
+      display: block;
+      width: 100%;
+      padding: 18px;
+      margin-top: 24px;
+      background: linear-gradient(135deg, #ff6b35, #ff8f00);
+      border: none;
+      border-radius: 50px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 900;
+      font-family: 'Noto Sans JP', sans-serif;
+      cursor: pointer;
+      box-shadow: 0 0 20px rgba(255,107,53,0.4);
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 30px rgba(255,107,53,0.6);
+    }
+    .submit-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+    .form-note {
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+      margin-top: 14px;
+    }
+    .form-error {
+      background: rgba(229,57,53,0.15);
+      border: 1px solid rgba(229,57,53,0.3);
+      border-radius: 8px;
+      padding: 10px;
+      color: #e53935;
+      font-size: 13px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 16px;
+      display: none;
+    }
+    .form-success {
+      text-align: center;
+      padding: 32px 16px;
+    }
+    .form-success-icon { font-size: 48px; margin-bottom: 12px; }
+    .form-success-title { font-size: 22px; font-weight: 900; margin-bottom: 8px; }
+    .form-success-text { font-size: 14px; color: #c0c0c0; line-height: 1.7; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (min-width: 641px) {
+      .fv-main { font-size: 56px; }
+      .fv-sub { font-size: 18px; }
+      .section-title { font-size: 36px; }
+      .form-title { font-size: 28px; }
+      .fv-cta { font-size: 22px; padding: 20px 56px; }
+      .submit-btn { font-size: 20px; }
+    }
+    @media (max-width: 640px) {
+      .fv { padding: 32px 16px; }
+      .fv-main { font-size: 32px; }
+      .badges { gap: 8px; }
+      .badge { min-width: 100px; padding: 12px 10px; }
+      .badge-num { font-size: 24px; }
+      .result-card { flex-direction: column; text-align: center; gap: 8px; }
+      .rc-num { font-size: 40px; }
+      .compare-table th, .compare-table td { padding: 10px 6px; font-size: 11px; }
+      .form-box { padding: 28px 18px; }
+      .cta-section { padding: 48px 16px 64px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BLOCK 1: FV -->
+  <section class="fv">
+    <div id="personalize-banner" class="personalize"></div>
+    <h1 class="fv-main"><span class="accent">建設業</span>の採用、<br>もう困らない。</h1>
+    <p class="fv-sub">データ分析×専任コンサルで、<br>成果が出るまで伴走します。</p>
+    <div class="badges">
+      <div class="badge">
+        <p class="badge-num">1,000<span class="unit">社+</span></p>
+        <p class="badge-label">導入実績</p>
+      </div>
+      <div class="badge">
+        <p class="badge-num">10<span class="unit">日</span></p>
+        <p class="badge-label">最短採用実績</p>
+      </div>
+      <div class="badge">
+        <p class="badge-num">60<span class="unit">%</span></p>
+        <p class="badge-label">コスト削減</p>
+      </div>
+    </div>
+    <a href="#form-section" class="fv-cta">無料で資料をダウンロード ▼</a>
+  </section>
+
+  <!-- BLOCK 2: 実績 -->
+  <section class="results">
+    <h2 class="section-title">導入企業の成果</h2>
+    <p class="section-sub">建設業に特化した採用支援で、確かな結果を</p>
+    <div class="result-cards">
+      <div class="result-card">
+        <div class="rc-num">5<span class="rc-unit">倍</span></div>
+        <div class="rc-body">
+          <p class="rc-title">導入3ヶ月で応募数が5倍に増加</p>
+          <p class="rc-detail">型枠工事 / 東京都 / 従業員25名</p>
+        </div>
+      </div>
+      <div class="result-card">
+        <div class="rc-num">15<span class="rc-unit">件/月</span></div>
+        <div class="rc-body">
+          <p class="rc-title">応募ゼロ → 毎月15件の応募が安定</p>
+          <p class="rc-detail">土木作業員 / 千葉県 / 従業員12名</p>
+        </div>
+      </div>
+      <div class="result-card">
+        <div class="rc-num">10<span class="rc-unit">日</span></div>
+        <div class="rc-body">
+          <p class="rc-title">最短10日で1名採用・2名面談成功</p>
+          <p class="rc-detail">型枠工事 / 地方中小企業</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOCK 3: 比較表 -->
+  <section class="compare">
+    <h2 class="section-title">他社との比較</h2>
+    <p class="section-sub">ガテン採用が選ばれる理由</p>
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="col-us">ガテン採用</th>
+          <th>求人広告A社</th>
+          <th>人材紹介B社</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="feature-col">初期費用</td>
+          <td class="col-us"><span class="icon-o">○</span> 0円</td>
+          <td><span class="icon-x">×</span></td>
+          <td><span class="icon-x">×</span></td>
+        </tr>
+        <tr>
+          <td class="feature-col">月額費用</td>
+          <td class="col-us"><span class="icon-o">○</span> 3.9万円〜</td>
+          <td><span class="icon-x">×</span></td>
+          <td><span class="icon-x">×</span></td>
+        </tr>
+        <tr>
+          <td class="feature-col">ABテスト改善</td>
+          <td class="col-us"><span class="icon-o">○</span></td>
+          <td><span class="icon-x">×</span></td>
+          <td><span class="icon-x">×</span></td>
+        </tr>
+        <tr>
+          <td class="feature-col">専任コンサル伴走</td>
+          <td class="col-us"><span class="icon-o">○</span></td>
+          <td><span class="icon-x">×</span></td>
+          <td><span class="icon-t">△</span></td>
+        </tr>
+        <tr>
+          <td class="feature-col">求人検索エンジン対応</td>
+          <td class="col-us"><span class="icon-o">○</span></td>
+          <td><span class="icon-t">△</span></td>
+          <td><span class="icon-t">△</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- BLOCK 4: CTA + FORM -->
+  <section class="cta-section" id="form-section">
+    <div class="form-box">
+      <h2 class="form-title">まずは無料で資料をダウンロード</h2>
+      <p class="form-sub">30秒で完了・しつこい営業はしません</p>
+      <form id="short-form">
+        <div id="form-error" class="form-error"></div>
+        <div class="fg">
+          <label for="company">会社名 <span class="req">*</span></label>
+          <input type="text" id="company" name="company" placeholder="例：山田建設株式会社" required>
+        </div>
+        <div class="fg">
+          <label for="name">お名前 <span class="req">*</span></label>
+          <input type="text" id="name" name="name" placeholder="例：山田 太郎" required>
+        </div>
+        <div class="fg">
+          <label for="email">メールアドレス <span class="req">*</span></label>
+          <input type="email" id="email" name="email" placeholder="例：info@example.com" required>
+        </div>
+        <div class="fg">
+          <label for="phone">電話番号</label>
+          <input type="tel" id="phone" name="phone" placeholder="例：03-1234-5678">
+        </div>
+        <button type="submit" class="submit-btn">無料で資料をダウンロード</button>
+        <p class="form-note">※ご入力いただいた情報は資料送付にのみ使用します</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- JS -->
+  <script>
+    // パーソナライズ
+    var params = new URLSearchParams(window.location.search);
+    var companyParam = params.get('company');
+    if (companyParam) {
+      var banner = document.getElementById('personalize-banner');
+      banner.textContent = companyParam + ' 様向けのご提案';
+      banner.style.display = 'block';
+      var companyInput = document.getElementById('company');
+      if (companyInput) companyInput.value = companyParam;
+    }
+
+    // フォーム送信
+    var GAS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwVehb8tnAcDKbd6ZV_IzvPyBlX6gIS1PFGNpbVaWRLiVvC5rSARSCMZHzYk8LxANGn/exec';
+
+    document.getElementById('short-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      var form = e.target;
+      var btn = form.querySelector('.submit-btn');
+      var errorEl = document.getElementById('form-error');
+      var formBox = form.closest('.form-box');
+
+      errorEl.style.display = 'none';
+      var originalText = btn.textContent;
+      btn.textContent = '送信中...';
+      btn.disabled = true;
+
+      try {
+        var p = new URLSearchParams();
+        p.append('company', form.querySelector('#company').value);
+        p.append('name', form.querySelector('#name').value);
+        p.append('email', form.querySelector('#email').value);
+        p.append('phone', form.querySelector('#phone').value);
+
+        await fetch(GAS_ENDPOINT, { method: 'POST', body: p, mode: 'no-cors' });
+
+        formBox.innerHTML =
+          '<div class="form-success">' +
+            '<div class="form-success-icon">✅</div>' +
+            '<p class="form-success-title">ありがとうございます！</p>' +
+            '<p class="form-success-text">資料のご案内をメールでお送りしました。<br><br>メールが届かない場合は<br>迷惑メールフォルダをご確認ください。</p>' +
+          '</div>';
+      } catch (err) {
+        errorEl.textContent = '送信に失敗しました。お手数ですがお電話でお問い合わせください。';
+        errorEl.style.display = 'block';
+        btn.textContent = originalText;
+        btn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
