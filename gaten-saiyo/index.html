@@ -743,6 +743,161 @@
     }
 
     /* ===========================
+       SECTION 06 - データ伴走
+    =========================== */
+    #section06 .section-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: #c0c0c0;
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+    }
+    #section06 .heading {
+      font-size: 28px;
+      font-weight: 800;
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+    #section06 .heading-sub {
+      font-size: 14px;
+      color: #ff8f00;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    #section06 .desc {
+      font-size: 15px;
+      color: #c0c0c0;
+      text-align: center;
+      line-height: 1.8;
+      margin-bottom: 28px;
+    }
+    #section06 .dashboard {
+      width: 100%;
+      background: rgba(255,255,255,0.04);
+      border-radius: 12px;
+      padding: 24px 20px;
+      border: 1px solid rgba(255,255,255,0.10);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.05);
+      margin-bottom: 20px;
+    }
+    #section06 .dash-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #c0c0c0;
+      margin-bottom: 16px;
+      letter-spacing: 0.04em;
+    }
+    #section06 .dash-row {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    #section06 .dash-metric {
+      flex: 1;
+      background: rgba(255,255,255,0.04);
+      border-radius: 10px;
+      padding: 14px 12px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    #section06 .dm-value {
+      font-size: 28px;
+      font-weight: 900;
+      color: #ff6d00;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    #section06 .dm-value .dm-unit {
+      font-size: 14px;
+      color: #ff8f00;
+    }
+    #section06 .dm-label {
+      font-size: 11px;
+      color: #c0c0c0;
+      font-weight: 700;
+    }
+    #section06 .dash-bars {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    #section06 .bar-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    #section06 .bar-label {
+      font-size: 12px;
+      color: #c0c0c0;
+      font-weight: 700;
+      width: 80px;
+      flex-shrink: 0;
+    }
+    #section06 .bar-track {
+      flex: 1;
+      height: 8px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    #section06 .bar-fill-data {
+      height: 100%;
+      border-radius: 4px;
+      background: linear-gradient(90deg, #ff6d00, #ffab00);
+    }
+    #section06 .bar-pct {
+      font-size: 12px;
+      color: #ff6d00;
+      font-weight: 700;
+      width: 40px;
+      text-align: right;
+      flex-shrink: 0;
+    }
+    #section06 .flow-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    #section06 .flow-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 10px;
+      padding: 14px 18px;
+      border: 1px solid rgba(255,255,255,0.10);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    #section06 .flow-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, #ff6d00, #ff8f00);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+      box-shadow: 0 4px 10px rgba(255,109,0,0.3);
+    }
+    #section06 .flow-text {
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.4;
+    }
+    #section06 .flow-text .accent {
+      color: #ff6d00;
+    }
+
+    /* ===========================
        SECTION 07 - 実績データ
     =========================== */
     #section07 .heading-tag {
@@ -1818,6 +1973,8 @@
       #section04 .lead-line2 { font-size: 28px; }
       #section04 .lead-line2 .accent-orange { font-size: 32px; }
       #section05 .heading { font-size: 48px; }
+      #section06 .heading { font-size: 48px; }
+      #section06 .desc { font-size: 16px; }
       #section07 .heading { font-size: 48px; }
       #section07 .stat-number-big { font-size: 64px; }
       #section08 .heading { font-size: 48px; }
@@ -2341,6 +2498,67 @@
         <p class="cta-sub-label">無料・先着30社限定</p>
         <a href="#contact-form" class="cta-button">今すぐ資料をダウンロードする ▼</a>
         <p class="cta-note">※定員に達し次第、受付終了となります。</p>
+      </div>
+    </section>
+
+    <!-- ===========================
+         SECTION 06 - データ伴走
+    =========================== -->
+    <section id="section06">
+      <p class="section-label">作って終わりじゃない。</p>
+      <h2 class="heading">データ活用＆専任コンサルで<br>成果が出るまで伴走</h2>
+      <p class="heading-sub">掲載後の改善こそが、採用成功のカギ</p>
+
+      <p class="desc">専任コンサルが、<br>求人検索エンジン／採用LP／SNSの<br>データを継続して分析・改善。</p>
+
+      <div class="dashboard">
+        <p class="dash-title">📊 改善ダッシュボード（イメージ）</p>
+        <div class="dash-row">
+          <div class="dash-metric">
+            <p class="dm-value">536<span class="dm-unit">回</span></p>
+            <p class="dm-label">表示回数</p>
+          </div>
+          <div class="dash-metric">
+            <p class="dm-value">106<span class="dm-unit">回</span></p>
+            <p class="dm-label">クリック数</p>
+          </div>
+          <div class="dash-metric">
+            <p class="dm-value">19.8<span class="dm-unit">%</span></p>
+            <p class="dm-label">CTR</p>
+          </div>
+        </div>
+        <div class="dash-bars">
+          <div class="bar-item">
+            <span class="bar-label">求人検索</span>
+            <div class="bar-track"><div class="bar-fill-data" style="width:85%;"></div></div>
+            <span class="bar-pct">85%</span>
+          </div>
+          <div class="bar-item">
+            <span class="bar-label">採用LP</span>
+            <div class="bar-track"><div class="bar-fill-data" style="width:62%;"></div></div>
+            <span class="bar-pct">62%</span>
+          </div>
+          <div class="bar-item">
+            <span class="bar-label">SNS広告</span>
+            <div class="bar-track"><div class="bar-fill-data" style="width:45%;"></div></div>
+            <span class="bar-pct">45%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flow-list">
+        <div class="flow-item">
+          <div class="flow-icon">📈</div>
+          <p class="flow-text"><span class="accent">毎月</span>データレポートをお届け</p>
+        </div>
+        <div class="flow-item">
+          <div class="flow-icon">🔄</div>
+          <p class="flow-text">求人原稿を<span class="accent">ABテスト</span>で継続改善</p>
+        </div>
+        <div class="flow-item">
+          <div class="flow-icon">🤝</div>
+          <p class="flow-text">専任コンサルが<span class="accent">採用成功まで</span>伴走</p>
+        </div>
       </div>
     </section>
 
